@@ -1,0 +1,659 @@
+gameweek,player_name,team_name,position_name,points,kickoff_time,home_or_away,opposition_name,team_odds
+1,Folarin Balogun,Arsenal,FWD,0,12,Home,Nott'm Forest,1.18
+1,Cédric Alves Soares,Arsenal,DEF,0,12,Home,Nott'm Forest,1.18
+1,Mohamed Elneny,Arsenal,MID,0,12,Home,Nott'm Forest,1.18
+1,Fábio Ferreira Vieira,Arsenal,MID,0,12,Home,Nott'm Forest,1.18
+1,Gabriel dos Santos Magalhães,Arsenal,DEF,1,12,Home,Nott'm Forest,1.18
+1,Kai Havertz,Arsenal,MID,2,12,Home,Nott'm Forest,1.18
+1,Rob Holding,Crystal Palace,DEF,0,12,NULL,NULL,
+1,Gabriel Fernando de Jesus,Arsenal,FWD,0,12,Home,Nott'm Forest,1.18
+1,Jorge Luiz Frello Filho,Arsenal,MID,0,12,Home,Nott'm Forest,1.18
+1,Jakub Kiwior,Arsenal,DEF,0,12,Home,Nott'm Forest,1.18
+1,Marcus Oliveira Alencar,Arsenal,MID,0,12,Home,Nott'm Forest,1.18
+1,Gabriel Martinelli Silva,Arsenal,MID,5,12,Home,Nott'm Forest,1.18
+1,Eddie Nketiah,Arsenal,FWD,8,12,Home,Nott'm Forest,1.18
+1,Martin Ødegaard,Arsenal,MID,2,12,Home,Nott'm Forest,1.18
+1,Thomas Partey,Arsenal,MID,2,12,Home,Nott'm Forest,1.18
+1,Nicolas Pépé,Arsenal,MID,0,12,Home,Nott'm Forest,1.18
+1,Aaron Ramsdale,Arsenal,GKP,2,12,Home,Nott'm Forest,1.18
+1,Rúnar Alex Rúnarsson,Arsenal,GKP,0,12,Home,Nott'm Forest,1.18
+1,Bukayo Saka,Arsenal,MID,10,12,Home,Nott'm Forest,1.18
+1,William Saliba,Arsenal,DEF,5,12,Home,Nott'm Forest,1.18
+1,Albert Sambi Lokonga,Luton,MID,0,12,NULL,NULL,
+1,Emile Smith Rowe,Arsenal,MID,0,12,Home,Nott'm Forest,1.18
+1,Nuno Varela Tavares,Nott'm Forest,DEF,0,12,Away,Arsenal,15.0
+1,Kieran Tierney,Arsenal,DEF,0,12,Home,Nott'm Forest,1.18
+1,Takehiro Tomiyasu,Arsenal,DEF,1,12,Home,Nott'm Forest,1.18
+1,Leandro Trossard,Arsenal,MID,1,12,Home,Nott'm Forest,1.18
+1,Auston Trusty,Sheffield Utd,DEF,0,14,Home,Crystal Palace,3.0
+1,Matt Turner,Nott'm Forest,GKP,2,12,Away,Arsenal,15.0
+1,Benjamin White,Arsenal,DEF,1,12,Home,Nott'm Forest,1.18
+1,Granit Xhaka,Arsenal,MID,0,12,Home,Nott'm Forest,1.18
+1,Oleksandr Zinchenko,Arsenal,DEF,0,12,Home,Nott'm Forest,1.18
+1,Alexandre Moreno Lopera,Aston Villa,DEF,0,16,Away,Newcastle,4.6
+1,Cameron Archer,Sheffield Utd,FWD,0,16,NULL,NULL,
+1,Leon Bailey,Aston Villa,MID,1,16,Away,Newcastle,4.6
+1,Emiliano Buendía Stati,Aston Villa,MID,0,16,Away,Newcastle,4.6
+1,Matty Cash,Aston Villa,DEF,-1,16,Away,Newcastle,4.6
+1,Calum Chambers,Aston Villa,DEF,0,16,Away,Newcastle,4.6
+1,Philippe Coutinho Correia,Aston Villa,MID,1,16,Away,Newcastle,4.6
+1,Keinan Davis,Aston Villa,FWD,0,16,Away,Newcastle,4.6
+1,Leander Dendoncker,Aston Villa,MID,0,16,Away,Newcastle,4.6
+1,Diego Carlos Santos Silva,Aston Villa,DEF,0,16,Away,Newcastle,4.6
+1,Lucas Digne,Aston Villa,DEF,-1,16,Away,Newcastle,4.6
+1,Douglas Luiz Soares de Paulo,Aston Villa,MID,1,16,Away,Newcastle,4.6
+1,Jhon Durán,Aston Villa,FWD,0,16,Away,Newcastle,4.6
+1,Kortney Hause,Aston Villa,DEF,0,16,Away,Newcastle,4.6
+1,Tim Iroegbunam,Aston Villa,MID,0,16,Away,Newcastle,4.6
+1,Boubacar Kamara,Aston Villa,MID,2,16,Away,Newcastle,4.6
+1,Ezri Konsa Ngoyo,Aston Villa,DEF,0,16,Away,Newcastle,4.6
+1,Emiliano Martínez Romero,Aston Villa,GKP,1,16,Away,Newcastle,4.6
+1,John McGinn,Aston Villa,MID,2,16,Away,Newcastle,4.6
+1,Tyrone Mings,Aston Villa,DEF,0,16,Away,Newcastle,4.6
+1,Marvelous Nakamba,Luton,MID,2,14,Away,Brighton,9.0
+1,Robin Olsen,Aston Villa,GKP,0,16,Away,Newcastle,4.6
+1,Jaden Philogene-Bidace,Aston Villa,MID,1,16,Away,Newcastle,4.6
+1,Jacob Ramsey,Aston Villa,MID,0,16,Away,Newcastle,4.6
+1,Morgan Sanson,Aston Villa,MID,0,16,Away,Newcastle,4.6
+1,Viljami Sinisalo,Aston Villa,GKP,0,16,Away,Newcastle,4.6
+1,Youri Tielemans,Aston Villa,MID,1,16,Away,Newcastle,4.6
+1,Bertrand Traoré,Aston Villa,MID,0,16,Away,Newcastle,4.6
+1,Ollie Watkins,Aston Villa,FWD,5,16,Away,Newcastle,4.6
+1,Wesley Moraes Ferreira da Silva,Aston Villa,FWD,0,16,Away,Newcastle,4.6
+1,Jaidon Anthony,Bournemouth,MID,1,14,Home,West Ham,2.7
+1,Philip Billing,Bournemouth,MID,2,14,Home,West Ham,2.7
+1,David Brooks,Bournemouth,MID,2,14,Home,West Ham,2.7
+1,Ryan Christie,Bournemouth,MID,2,14,Home,West Ham,2.7
+1,Lewis Cook,Bournemouth,MID,0,14,Home,West Ham,2.7
+1,Siriki Dembélé,Bournemouth,MID,0,14,Home,West Ham,2.7
+1,Ryan Fredericks,Bournemouth,DEF,0,14,Home,West Ham,2.7
+1,James Hill,Bournemouth,DEF,1,14,Home,West Ham,2.7
+1,Lloyd Kelly,Bournemouth,DEF,0,14,Home,West Ham,2.7
+1,Gavin Kilkenny,Bournemouth,MID,0,14,Home,West Ham,2.7
+1,Justin Kluivert,Bournemouth,MID,1,14,Home,West Ham,2.7
+1,Jamal Lowe,Bournemouth,MID,0,14,Home,West Ham,2.7
+1,Emiliano Marcondes,Bournemouth,MID,0,14,Home,West Ham,2.7
+1,Chris Mepham,Bournemouth,DEF,0,14,Home,West Ham,2.7
+1,Kieffer Moore,Bournemouth,FWD,1,14,Home,West Ham,2.7
+1,Norberto Murara Neto,Bournemouth,GKP,2,14,Home,West Ham,2.7
+1,Dango Ouattara,Bournemouth,MID,0,14,Home,West Ham,2.7
+1,Ben Pearson,Bournemouth,MID,0,14,Home,West Ham,2.7
+1,Darren Randolph,Bournemouth,GKP,0,14,Home,West Ham,2.7
+1,Joe Rothwell,Bournemouth,MID,2,14,Home,West Ham,2.7
+1,Antoine Semenyo,Bournemouth,FWD,4,14,Home,West Ham,2.7
+1,Marcos Senesi,Bournemouth,DEF,1,14,Home,West Ham,2.7
+1,Adam Smith,Bournemouth,DEF,0,14,Home,West Ham,2.7
+1,Dominic Solanke,Bournemouth,FWD,7,14,Home,West Ham,2.7
+1,Marcus Tavernier,Bournemouth,MID,0,14,Home,West Ham,2.7
+1,Hamed Traorè,Bournemouth,MID,0,14,Home,West Ham,2.7
+1,Mark Travers,Bournemouth,GKP,0,14,Home,West Ham,2.7
+1,Illia Zabarnyi,Bournemouth,DEF,2,14,Home,West Ham,2.7
+1,Kristoffer Ajer,Brentford,DEF,1,13,Home,Spurs,2.75
+1,Ellery Balcombe,Brentford,GKP,0,13,Home,Spurs,2.75
+1,Shandon Baptiste,Brentford,MID,1,13,Home,Spurs,2.75
+1,Mads Bech Sørensen,Brentford,DEF,0,13,Home,Spurs,2.75
+1,Mads Bidstrup,Brentford,MID,0,13,Home,Spurs,2.75
+1,Sergi Canós Tenés,Brentford,MID,0,13,Home,Spurs,2.75
+1,Nathan Collins,Brentford,DEF,1,13,Home,Spurs,2.75
+1,Matthew Cox,Brentford,GKP,0,13,Home,Spurs,2.75
+1,Mikkel Damsgaard,Brentford,MID,1,13,Home,Spurs,2.75
+1,Josh Dasilva,Brentford,MID,0,13,Home,Spurs,2.75
+1,Halil Dervişoğlu,Brentford,FWD,0,13,Home,Spurs,2.75
+1,Mark Flekken,Brentford,GKP,2,13,Home,Spurs,2.75
+1,Charlie Goode,Brentford,DEF,0,13,Home,Spurs,2.75
+1,Rico Henry,Brentford,DEF,4,13,Home,Spurs,2.75
+1,Aaron Hickey,Brentford,DEF,0,13,Home,Spurs,2.75
+1,Vitaly Janelt,Brentford,MID,2,13,Home,Spurs,2.75
+1,Mathias Jensen,Brentford,MID,4,13,Home,Spurs,2.75
+1,Keane Lewis-Potter,Brentford,MID,0,13,Home,Spurs,2.75
+1,Bryan Mbeumo,Brentford,MID,7,13,Home,Spurs,2.75
+1,Ben Mee,Brentford,DEF,0,13,Home,Spurs,2.75
+1,Christian Nørgaard,Brentford,MID,2,13,Home,Spurs,2.75
+1,Frank Onyeka,Brentford,MID,0,13,Home,Spurs,2.75
+1,Ethan Pinnock,Brentford,DEF,1,13,Home,Spurs,2.75
+1,David Raya Martin,Arsenal,GKP,0,13,NULL,NULL,
+1,Mads Roerslev Rasmussen,Brentford,DEF,1,13,Home,Spurs,2.75
+1,Kevin Schade,Brentford,MID,1,13,Home,Spurs,2.75
+1,Thomas Strakosha,Brentford,GKP,0,13,Home,Spurs,2.75
+1,Ivan Toney,Brentford,FWD,0,13,Home,Spurs,2.75
+1,Ryan Trevitt,Brentford,MID,0,13,Home,Spurs,2.75
+1,Yoane Wissa,Brentford,FWD,9,13,Home,Spurs,2.75
+1,Yegor Yarmoliuk,Brentford,MID,0,13,Home,Spurs,2.75
+1,Mathias Jorgensen,Brentford,DEF,1,13,Home,Spurs,2.75
+1,Simon Adingra,Brighton,MID,6,14,Home,Luton,1.33
+1,Steven Alzate,Brighton,MID,0,14,Home,Luton,1.33
+1,Yasin Ayari,Brighton,MID,0,14,Home,Luton,1.33
+1,Facundo Buonanotte,Brighton,MID,0,14,Home,Luton,1.33
+1,Moisés Caicedo Corozo,Chelsea,MID,0,14,NULL,NULL,
+1,Aaron Connolly,Brighton,FWD,0,14,Home,Luton,1.33
+1,Mahmoud Dahoud,Brighton,MID,3,14,Home,Luton,1.33
+1,Lewis Dunk,Brighton,DEF,2,14,Home,Luton,1.33
+1,Julio Enciso,Brighton,MID,1,14,Home,Luton,1.33
+1,Pervis Estupiñán,Brighton,DEF,7,14,Home,Luton,1.33
+1,Evan Ferguson,Brighton,FWD,5,14,Home,Luton,1.33
+1,Billy Gilmour,Brighton,MID,1,14,Home,Luton,1.33
+1,Pascal Groß,Brighton,MID,2,14,Home,Luton,1.33
+1,João Pedro Junqueira de Jesus,Brighton,FWD,7,14,Home,Luton,1.33
+1,Michał Karbownik,Brighton,DEF,0,14,Home,Luton,1.33
+1,Kacper Kozłowski,Brighton,MID,0,14,Home,Luton,1.33
+1,Adam Lallana,Brighton,MID,0,14,Home,Luton,1.33
+1,Tariq Lamptey,Brighton,DEF,0,14,Home,Luton,1.33
+1,Solly March,Brighton,MID,9,14,Home,Luton,1.33
+1,Tom McGill,Brighton,GKP,0,14,Home,Luton,1.33
+1,James Milner,Brighton,MID,3,14,Home,Luton,1.33
+1,Kaoru Mitoma,Brighton,MID,5,14,Home,Luton,1.33
+1,Jakub Moder,Brighton,MID,0,14,Home,Luton,1.33
+1,Robert Sánchez,Chelsea,GKP,2,15,Home,Liverpool,2.9
+1,Jeremy Sarmiento Morante,Brighton,MID,0,14,Home,Luton,1.33
+1,Kjell Scherpen,Brighton,GKP,0,14,Home,Luton,1.33
+1,Jason Steele,Brighton,GKP,2,14,Home,Luton,1.33
+1,Deniz Undav,Brighton,FWD,0,14,Home,Luton,1.33
+1,Jan Paul van Hecke,Brighton,DEF,2,14,Home,Luton,1.33
+1,Joël Veltman,Brighton,DEF,1,14,Home,Luton,1.33
+1,Bart Verbruggen,Brighton,GKP,0,14,Home,Luton,1.33
+1,Adam Webster,Brighton,DEF,0,14,Home,Luton,1.33
+1,Danny Welbeck,Brighton,FWD,2,14,Home,Luton,1.33
+1,Andi Zeqiri,Brighton,FWD,0,14,Home,Luton,1.33
+1,Enock Agyei,Burnley,MID,0,19,Home,Man City,8.0
+1,Ameen Al-Dakhil,Burnley,DEF,1,19,Home,Man City,8.0
+1,Samuel Bastien,Burnley,MID,0,19,Home,Man City,8.0
+1,Manuel Benson Hedilazio,Burnley,MID,1,19,Home,Man City,8.0
+1,Jordan Beyer,Burnley,DEF,1,19,Home,Man City,8.0
+1,Josh Brownhill,Burnley,MID,1,19,Home,Man City,8.0
+1,Darko Churlinov,Burnley,MID,0,19,Home,Man City,8.0
+1,Jack Cork,Burnley,MID,0,19,Home,Man City,8.0
+1,Dara Costelloe,Burnley,MID,0,19,Home,Man City,8.0
+1,Josh Cullen,Burnley,MID,2,19,Home,Man City,8.0
+1,CJ Egan-Riley,Burnley,DEF,0,19,Home,Man City,8.0
+1,Hjalmar Ekdal,Burnley,DEF,0,19,Home,Man City,8.0
+1,Lyle Foster,Burnley,FWD,2,19,Home,Man City,8.0
+1,Denis Franchi,Burnley,GKP,0,19,Home,Man City,8.0
+1,Jóhann Berg Gudmundsson,Burnley,MID,0,19,Home,Man City,8.0
+1,Luke McNally,Burnley,DEF,0,19,Home,Man City,8.0
+1,Arijanet Muric,Burnley,GKP,0,19,Home,Man City,8.0
+1,Dara O'Shea,Burnley,DEF,1,19,Home,Man City,8.0
+1,Michael Obafemi,Burnley,FWD,0,19,Home,Man City,8.0
+1,Bailey Peacock-Farrell,Burnley,GKP,0,19,Home,Man City,8.0
+1,Connor Roberts,Burnley,DEF,1,19,Home,Man City,8.0
+1,Jay Rodriguez,Burnley,FWD,0,19,Home,Man City,8.0
+1,Charlie Taylor,Burnley,DEF,0,19,Home,Man City,8.0
+1,Bobby Thomas,Burnley,DEF,0,19,Home,Man City,8.0
+1,Scott Twine,Burnley,MID,0,19,Home,Man City,8.0
+1,Lawrence Vigouroux,Burnley,GKP,0,19,Home,Man City,8.0
+1,Victor da Silva,Burnley,DEF,1,19,Home,Man City,8.0
+1,Wout Weghorst,Burnley,FWD,0,19,Home,Man City,8.0
+1,Anass Zaroury,Burnley,MID,-2,19,Home,Man City,8.0
+1,Ethan Ampadu,Chelsea,DEF,0,15,Home,Liverpool,2.9
+1,Andrey Nascimento dos Santos,Chelsea,MID,0,15,Home,Liverpool,2.9
+1,Kepa Arrizabalaga,Chelsea,GKP,0,15,Home,Liverpool,2.9
+1,Pierre-Emerick Aubameyang,Chelsea,FWD,0,15,Home,Liverpool,2.9
+1,César Azpilicueta,Chelsea,DEF,0,15,Home,Liverpool,2.9
+1,Abdul Rahman Baba,Chelsea,DEF,0,15,Home,Liverpool,2.9
+1,Benoît Badiashile,Chelsea,DEF,0,15,Home,Liverpool,2.9
+1,Marcus Bettinelli,Chelsea,GKP,0,15,Home,Liverpool,2.9
+1,Armando Broja,Fulham,FWD,0,15,NULL,NULL,
+1,Trevoh Chalobah,Chelsea,DEF,0,15,Home,Liverpool,2.9
+1,Ben Chilwell,Chelsea,DEF,7,15,Home,Liverpool,2.9
+1,Carney Chukwuemeka,Chelsea,MID,1,15,Home,Liverpool,2.9
+1,Levi Colwill,Chelsea,DEF,2,15,Home,Liverpool,2.9
+1,Marc Cucurella Saseta,Chelsea,DEF,0,15,Home,Liverpool,2.9
+1,Enzo Fernández,Chelsea,MID,1,15,Home,Liverpool,2.9
+1,David Datro Fofana,Burnley,FWD,0,15,NULL,NULL,
+1,Wesley Fofana,Chelsea,DEF,0,15,Home,Liverpool,2.9
+1,Conor Gallagher,Chelsea,MID,2,15,Home,Liverpool,2.9
+1,Malo Gusto,Chelsea,DEF,1,15,Home,Liverpool,2.9
+1,Lewis Hall,Newcastle,DEF,0,15,NULL,NULL,
+1,Callum Hudson-Odoi,Nott'm Forest,MID,0,15,NULL,NULL,
+1,Reece James,Chelsea,DEF,2,15,Home,Liverpool,2.9
+1,Romelu Lukaku Bolingoli,Chelsea,FWD,0,15,Home,Liverpool,2.9
+1,Noni Madueke,Chelsea,MID,0,15,Home,Liverpool,2.9
+1,Mason Mount,Man Utd,MID,3,19,Home,Wolves,1.33
+1,Mykhailo Mudryk,Chelsea,MID,1,15,Home,Liverpool,2.9
+1,Nicolas Jackson,Chelsea,FWD,1,15,Home,Liverpool,2.9
+1,Christopher Nkunku,Chelsea,FWD,0,15,Home,Liverpool,2.9
+1,Christian Pulisic,Chelsea,MID,0,15,Home,Liverpool,2.9
+1,Malang Sarr,Chelsea,DEF,0,15,Home,Liverpool,2.9
+1,Gabriel Słonina,Chelsea,GKP,0,15,Home,Liverpool,2.9
+1,Raheem Sterling,Chelsea,MID,2,15,Home,Liverpool,2.9
+1,Thiago Emiliano da Silva,Chelsea,DEF,2,15,Home,Liverpool,2.9
+1,Hakim Ziyech,Chelsea,MID,0,15,Home,Liverpool,2.9
+1,Naouirou Ahamada,Crystal Palace,MID,0,14,Away,Sheffield Utd,2.38
+1,Joachim Andersen,Crystal Palace,DEF,9,14,Away,Sheffield Utd,2.38
+1,Jordan Ayew,Crystal Palace,MID,6,14,Away,Sheffield Utd,2.38
+1,Nathaniel Clyne,Crystal Palace,DEF,0,14,Away,Sheffield Utd,2.38
+1,Cheick Doucouré,Crystal Palace,MID,3,14,Away,Sheffield Utd,2.38
+1,Malcolm Ebiowei,Crystal Palace,MID,0,14,Away,Sheffield Utd,2.38
+1,Odsonne Edouard,Crystal Palace,FWD,7,14,Away,Sheffield Utd,2.38
+1,Eberechi Eze,Crystal Palace,MID,3,14,Away,Sheffield Utd,2.38
+1,Vicente Guaita,Crystal Palace,GKP,0,14,Away,Sheffield Utd,2.38
+1,Marc Guéhi,Crystal Palace,DEF,6,14,Away,Sheffield Utd,2.38
+1,Will Hughes,Crystal Palace,MID,0,14,Away,Sheffield Utd,2.38
+1,Sam Johnstone,Crystal Palace,GKP,6,14,Away,Sheffield Utd,2.38
+1,Jefferson Lerma Solís,Crystal Palace,MID,3,14,Away,Sheffield Utd,2.38
+1,Jean-Philippe Mateta,Crystal Palace,FWD,0,14,Away,Sheffield Utd,2.38
+1,Remi Matthews,Crystal Palace,GKP,0,14,Away,Sheffield Utd,2.38
+1,Tyrick Mitchell,Crystal Palace,DEF,8,14,Away,Sheffield Utd,2.38
+1,Jake O'Brien,Crystal Palace,DEF,0,14,Away,Sheffield Utd,2.38
+1,Michael Olise,Crystal Palace,MID,0,14,Away,Sheffield Utd,2.38
+1,Luke Plange,Crystal Palace,FWD,0,14,Away,Sheffield Utd,2.38
+1,Chris Richards,Crystal Palace,DEF,0,14,Away,Sheffield Utd,2.38
+1,Jairo Riedewald,Crystal Palace,MID,0,14,Away,Sheffield Utd,2.38
+1,Jeffrey Schlupp,Crystal Palace,MID,3,14,Away,Sheffield Utd,2.38
+1,James Tomkins,Crystal Palace,DEF,1,14,Away,Sheffield Utd,2.38
+1,Joel Ward,Crystal Palace,DEF,6,14,Away,Sheffield Utd,2.38
+1,Joe Whitworth,Crystal Palace,GKP,0,14,Away,Sheffield Utd,2.38
+1,André Tavares Gomes,Everton,MID,0,14,Home,Fulham,2.2
+1,Jarrad Branthwaite,Everton,DEF,0,14,Home,Fulham,2.2
+1,Dominic Calvert-Lewin,Everton,FWD,0,14,Home,Fulham,2.2
+1,Seamus Coleman,Everton,DEF,0,14,Home,Fulham,2.2
+1,Dele Alli,Everton,MID,0,14,Home,Fulham,2.2
+1,Abdoulaye Doucouré,Everton,MID,2,14,Home,Fulham,2.2
+1,James Garner,Everton,MID,2,14,Home,Fulham,2.2
+1,Jean-Philippe Gbamin,Everton,MID,0,14,Home,Fulham,2.2
+1,Ben Godfrey,Everton,DEF,0,14,Home,Fulham,2.2
+1,Demarai Gray,Everton,MID,0,14,Home,Fulham,2.2
+1,Idrissa Gueye,Everton,MID,2,14,Home,Fulham,2.2
+1,Mason Holgate,Sheffield Utd,DEF,0,14,NULL,NULL,
+1,Alex Iwobi,Fulham,MID,2,14,Away,Everton,3.3
+1,Michael Keane,Everton,DEF,2,14,Home,Fulham,2.2
+1,Neal Maupay,Brentford,FWD,2,14,NULL,NULL,
+1,Dwight McNeil,Everton,MID,0,14,Home,Fulham,2.2
+1,Vitalii Mykolenko,Everton,DEF,0,14,Home,Fulham,2.2
+1,Amadou Onana,Everton,MID,2,14,Home,Fulham,2.2
+1,Nathan Patterson,Everton,DEF,2,14,Home,Fulham,2.2
+1,Jordan Pickford,Everton,GKP,2,14,Home,Fulham,2.2
+1,Ellis Simms,Everton,FWD,0,14,Home,Fulham,2.2
+1,James Tarkowski,Everton,DEF,2,14,Home,Fulham,2.2
+1,João Neves Virgínia,Everton,GKP,0,14,Home,Fulham,2.2
+1,Andreas Hoelgebaum Pereira,Fulham,MID,4,14,Away,Everton,3.3
+1,Tom Cairney,Fulham,MID,1,14,Away,Everton,3.3
+1,Ivan Neves Abreu Cavaleiro,Fulham,MID,0,14,Away,Everton,3.3
+1,Bobby De Cordova-Reid,Fulham,MID,6,14,Away,Everton,3.3
+1,Issa Diop,Fulham,DEF,8,14,Away,Everton,3.3
+1,Tyrese Francois,Fulham,MID,0,14,Away,Everton,3.3
+1,Anthony Knockaert,Fulham,MID,0,14,Away,Everton,3.3
+1,Terence Kongolo,Fulham,DEF,0,14,Away,Everton,3.3
+1,Bernd Leno,Fulham,GKP,12,14,Away,Everton,3.3
+1,Saša Lukić,Fulham,MID,3,14,Away,Everton,3.3
+1,Kevin Mbabu,Fulham,DEF,0,14,Away,Everton,3.3
+1,Aleksandar Mitrović,Fulham,FWD,1,14,Away,Everton,3.3
+1,Rodrigo Muniz Carvalho,Fulham,FWD,0,14,Away,Everton,3.3
+1,João Palhinha Gonçalves,Fulham,MID,0,14,Away,Everton,3.3
+1,Tim Ream,Fulham,DEF,7,14,Away,Everton,3.3
+1,Harrison Reed,Fulham,MID,3,14,Away,Everton,3.3
+1,Antonee Robinson,Fulham,DEF,6,14,Away,Everton,3.3
+1,Marek Rodák,Fulham,GKP,0,14,Away,Everton,3.3
+1,Kenny Tete,Fulham,DEF,5,14,Away,Everton,3.3
+1,Tosin Adarabioyo,Fulham,DEF,0,14,Away,Everton,3.3
+1,Carlos Vinícius Alves Morais,Fulham,FWD,0,14,Away,Everton,3.3
+1,Harry Wilson,Fulham,MID,3,14,Away,Everton,3.3
+1,Adrián San Miguel del Castillo,Liverpool,GKP,0,15,Away,Chelsea,2.38
+1,Trent Alexander-Arnold,Liverpool,DEF,1,15,Away,Chelsea,2.38
+1,Alisson Ramses Becker,Liverpool,GKP,3,15,Away,Chelsea,2.38
+1,Stefan Bajcetic,Liverpool,MID,0,15,Away,Chelsea,2.38
+1,Darwin Núñez Ribeiro,Liverpool,FWD,1,15,Away,Chelsea,2.38
+1,Diogo Teixeira da Silva,Liverpool,MID,1,15,Away,Chelsea,2.38
+1,Harvey Elliott,Liverpool,MID,1,15,Away,Chelsea,2.38
+1,Fabio Henrique Tavares,Liverpool,MID,0,15,Away,Chelsea,2.38
+1,Cody Gakpo,Liverpool,FWD,2,15,Away,Chelsea,2.38
+1,Joe Gomez,Liverpool,DEF,0,15,Away,Chelsea,2.38
+1,Jordan Henderson,Liverpool,MID,0,15,Away,Chelsea,2.38
+1,Curtis Jones,Liverpool,MID,1,15,Away,Chelsea,2.38
+1,Caoimhin Kelleher,Liverpool,GKP,0,15,Away,Chelsea,2.38
+1,Ibrahima Konaté,Liverpool,DEF,2,15,Away,Chelsea,2.38
+1,Luis Díaz,Liverpool,MID,8,15,Away,Chelsea,2.38
+1,Alexis Mac Allister,Liverpool,MID,1,15,Away,Chelsea,2.38
+1,Joel Matip,Liverpool,DEF,0,15,Away,Chelsea,2.38
+1,Nathaniel Phillips,Liverpool,DEF,0,15,Away,Chelsea,2.38
+1,Andrew Robertson,Liverpool,DEF,2,15,Away,Chelsea,2.38
+1,Mohamed Salah,Liverpool,MID,5,15,Away,Chelsea,2.38
+1,Dominik Szoboszlai,Liverpool,MID,2,15,Away,Chelsea,2.38
+1,Thiago Alcántara do Nascimento,Liverpool,MID,0,15,Away,Chelsea,2.38
+1,Konstantinos Tsimikas,Liverpool,DEF,0,15,Away,Chelsea,2.38
+1,Sepp van den Berg,Liverpool,DEF,0,15,Away,Chelsea,2.38
+1,Virgil van Dijk,Liverpool,DEF,2,15,Away,Chelsea,2.38
+1,Elijah Adebayo,Luton,FWD,2,14,Away,Brighton,9.0
+1,Mads Juel Andersen,Luton,DEF,0,14,Away,Brighton,9.0
+1,Amari'i Bell,Luton,DEF,0,14,Away,Brighton,9.0
+1,Luke Berry,Luton,MID,1,14,Away,Brighton,9.0
+1,Reece Burke,Luton,DEF,0,14,Away,Brighton,9.0
+1,Allan Campbell,Luton,MID,0,14,Away,Brighton,9.0
+1,Jordan Clark,Luton,MID,0,14,Away,Brighton,9.0
+1,Alfie Doughty,Luton,DEF,0,14,Away,Brighton,9.0
+1,Luke Freeman,Luton,MID,0,14,Away,Brighton,9.0
+1,Matt Macey,Luton,GKP,0,14,Away,Brighton,9.0
+1,John McAtee,Luton,FWD,0,14,Away,Brighton,9.0
+1,Carlos Mendes Gomes,Luton,MID,0,14,Away,Brighton,9.0
+1,Carlton Morris,Luton,FWD,8,14,Away,Brighton,9.0
+1,Admiral Muskwe,Luton,FWD,0,14,Away,Brighton,9.0
+1,Chiedozie Ogbene,Luton,FWD,1,14,Away,Brighton,9.0
+1,Fred Onyedinma,Luton,MID,0,14,Away,Brighton,9.0
+1,Gabriel Osho,Luton,DEF,0,14,Away,Brighton,9.0
+1,Aribim Pepple,Luton,FWD,0,14,Away,Brighton,9.0
+1,Dion Pereira,Luton,MID,0,14,Away,Brighton,9.0
+1,Dan Potts,Luton,DEF,0,14,Away,Brighton,9.0
+1,Glen Rea,Luton,MID,0,14,Away,Brighton,9.0
+1,James Shea,Luton,GKP,0,14,Away,Brighton,9.0
+1,Joe Taylor,Luton,FWD,0,14,Away,Brighton,9.0
+1,Elliot Thorpe,Luton,MID,0,14,Away,Brighton,9.0
+1,Jack Walton,Luton,GKP,0,14,Away,Brighton,9.0
+1,Louie Watson,Luton,MID,0,14,Away,Brighton,9.0
+1,Cauley Woodrow,Luton,FWD,1,14,Away,Brighton,9.0
+1,Manuel Akanji,Man City,DEF,6,19,Away,Burnley,1.33
+1,Nathan Aké,Man City,DEF,7,19,Away,Burnley,1.33
+1,Julián Álvarez,Man City,FWD,5,19,Away,Burnley,1.33
+1,Bernardo Veiga de Carvalho e Silva,Man City,MID,3,19,Away,Burnley,1.33
+1,Oscar Bobb,Man City,MID,0,19,Away,Burnley,1.33
+1,João Cancelo,Man City,DEF,0,19,Away,Burnley,1.33
+1,Scott Carson,Man City,GKP,0,19,Away,Burnley,1.33
+1,Shea Charles,Man City,MID,0,19,Away,Burnley,1.33
+1,Kevin De Bruyne,Man City,MID,1,19,Away,Burnley,1.33
+1,Rúben Gato Alves Dias,Man City,DEF,0,19,Away,Burnley,1.33
+1,Tommy Doyle,Wolves,MID,0,19,NULL,NULL,
+1,Ederson Santana de Moraes,Man City,GKP,6,19,Away,Burnley,1.33
+1,Phil Foden,Man City,MID,3,19,Away,Burnley,1.33
+1,Jack Grealish,Man City,MID,0,19,Away,Burnley,1.33
+1,Erling Haaland,Man City,FWD,13,19,Away,Burnley,1.33
+1,Mateo Kovačić,Man City,MID,3,19,Away,Burnley,1.33
+1,Aymeric Laporte,Man City,DEF,1,19,Away,Burnley,1.33
+1,Rico Lewis,Man City,DEF,6,19,Away,Burnley,1.33
+1,Riyad Mahrez,Man City,MID,0,19,Away,Burnley,1.33
+1,James McAtee,Sheffield Utd,MID,1,19,NULL,NULL,
+1,Stefan Ortega Moreno,Man City,GKP,0,19,Away,Burnley,1.33
+1,Cole Palmer,Chelsea,MID,1,19,NULL,NULL,
+1,Máximo Perrone,Man City,MID,0,19,Away,Burnley,1.33
+1,Kalvin Phillips,West Ham,MID,0,19,NULL,NULL,
+1,Rodrigo Hernandez,Man City,MID,13,19,Away,Burnley,1.33
+1,Sergio Gómez,Man City,DEF,0,19,Away,Burnley,1.33
+1,Zack Steffen,Man City,GKP,0,19,Away,Burnley,1.33
+1,John Stones,Man City,DEF,0,19,Away,Burnley,1.33
+1,Kyle Walker,Man City,DEF,6,19,Away,Burnley,1.33
+1,Alex Telles,Man Utd,DEF,0,19,Home,Wolves,1.33
+1,Amad Diallo,Man Utd,MID,0,19,Home,Wolves,1.33
+1,Antony Matheus dos Santos,Man Utd,MID,3,19,Home,Wolves,1.33
+1,Bruno Borges Fernandes,Man Utd,MID,3,19,Home,Wolves,1.33
+1,Brandon Williams,Man Utd,DEF,0,19,Home,Wolves,1.33
+1,Eric Bailly,Man Utd,DEF,0,19,Home,Wolves,1.33
+1,Carlos Henrique Casimiro,Man Utd,MID,3,19,Home,Wolves,1.33
+1,Diogo Dalot Teixeira,Man Utd,DEF,0,19,Home,Wolves,1.33
+1,Anthony Elanga,Nott'm Forest,MID,4,12,Away,Arsenal,15.0
+1,Christian Eriksen,Man Utd,MID,1,19,Home,Wolves,1.33
+1,Álvaro Fernández Carreras,Man Utd,DEF,0,19,Home,Wolves,1.33
+1,Frederico Rodrigues de Paula Santos,Man Utd,MID,0,19,Home,Wolves,1.33
+1,Alejandro Garnacho,Man Utd,MID,3,19,Home,Wolves,1.33
+1,Hannibal Mejbri,Man Utd,MID,0,19,Home,Wolves,1.33
+1,Tom Heaton,Man Utd,GKP,0,19,Home,Wolves,1.33
+1,Dean Henderson,Crystal Palace,GKP,0,19,NULL,NULL,
+1,Victor Lindelöf,Man Utd,DEF,1,19,Home,Wolves,1.33
+1,Harry Maguire,Man Utd,DEF,0,19,Home,Wolves,1.33
+1,Kobbie Mainoo,Man Utd,MID,0,19,Home,Wolves,1.33
+1,Tyrell Malacia,Man Utd,DEF,0,19,Home,Wolves,1.33
+1,Anthony Martial,Man Utd,FWD,0,19,Home,Wolves,1.33
+1,Lisandro Martínez,Man Utd,DEF,0,19,Home,Wolves,1.33
+1,Scott McTominay,Man Utd,MID,1,19,Home,Wolves,1.33
+1,Teden Mengi,Luton,DEF,0,19,NULL,NULL,
+1,Facundo Pellistri Rebollo,Man Utd,MID,1,19,Home,Wolves,1.33
+1,Raphaël Varane,Man Utd,DEF,14,19,Home,Wolves,1.33
+1,Marcus Rashford,Man Utd,MID,3,19,Home,Wolves,1.33
+1,Jadon Sancho,Man Utd,MID,1,19,Home,Wolves,1.33
+1,Luke Shaw,Man Utd,DEF,5,19,Home,Wolves,1.33
+1,Shola Shoretire,Man Utd,FWD,0,19,Home,Wolves,1.33
+1,Donny van de Beek,Man Utd,MID,0,19,Home,Wolves,1.33
+1,Aaron Wan-Bissaka,Man Utd,DEF,12,19,Home,Wolves,1.33
+1,Miguel Almirón Rejala,Newcastle,MID,2,16,Home,Aston Villa,1.75
+1,Elliot Anderson,Newcastle,MID,1,16,Home,Aston Villa,1.75
+1,Harrison Ashby,Newcastle,DEF,0,16,Home,Aston Villa,1.75
+1,Sven Botman,Newcastle,DEF,5,16,Home,Aston Villa,1.75
+1,Bruno Guimarães Rodriguez Moura,Newcastle,MID,1,16,Home,Aston Villa,1.75
+1,Dan Burn,Newcastle,DEF,2,16,Home,Aston Villa,1.75
+1,Karl Darlow,Newcastle,GKP,0,16,Home,Aston Villa,1.75
+1,Martin Dubravka,Newcastle,GKP,0,16,Home,Aston Villa,1.75
+1,Ryan Fraser,Newcastle,MID,0,16,Home,Aston Villa,1.75
+1,Mark Gillespie,Newcastle,GKP,0,16,Home,Aston Villa,1.75
+1,Anthony Gordon,Newcastle,MID,4,16,Home,Aston Villa,1.75
+1,Isaac Hayden,Newcastle,MID,0,16,Home,Aston Villa,1.75
+1,Jeff Hendrick,Newcastle,MID,0,16,Home,Aston Villa,1.75
+1,Alexander Isak,Newcastle,FWD,13,16,Home,Aston Villa,1.75
+1,Joelinton Cássio Apolinário de Lira,Newcastle,MID,2,16,Home,Aston Villa,1.75
+1,Emil Krafth,Newcastle,DEF,0,16,Home,Aston Villa,1.75
+1,Garang Kuol,Newcastle,MID,0,16,Home,Aston Villa,1.75
+1,Jamaal Lascelles,Newcastle,DEF,0,16,Home,Aston Villa,1.75
+1,Jamal Lewis,Newcastle,DEF,0,16,Home,Aston Villa,1.75
+1,Sean Longstaff,Newcastle,MID,1,16,Home,Aston Villa,1.75
+1,Javier Manquillo Gaitán,Newcastle,DEF,0,16,Home,Aston Villa,1.75
+1,Jacob Murphy,Newcastle,MID,4,16,Home,Aston Villa,1.75
+1,Nick Pope,Newcastle,GKP,3,16,Home,Aston Villa,1.75
+1,Matt Ritchie,Newcastle,MID,0,16,Home,Aston Villa,1.75
+1,Allan Saint-Maximin,Newcastle,MID,0,16,Home,Aston Villa,1.75
+1,Fabian Schär,Newcastle,DEF,2,16,Home,Aston Villa,1.75
+1,Matt Targett,Newcastle,DEF,0,16,Home,Aston Villa,1.75
+1,Sandro Tonali,Newcastle,MID,6,16,Home,Aston Villa,1.75
+1,Kieran Trippier,Newcastle,DEF,2,16,Home,Aston Villa,1.75
+1,Kell Watts,Newcastle,DEF,0,16,Home,Aston Villa,1.75
+1,Joe Willock,Newcastle,MID,0,16,Home,Aston Villa,1.75
+1,Callum Wilson,Newcastle,FWD,5,16,Home,Aston Villa,1.75
+1,Brandon Aguilera Zamora,Nott'm Forest,MID,0,12,Away,Arsenal,15.0
+1,Harry Arter,Nott'm Forest,MID,0,12,Away,Arsenal,15.0
+1,Serge Aurier,Nott'm Forest,DEF,1,12,Away,Arsenal,15.0
+1,Taiwo Awoniyi,Nott'm Forest,FWD,7,12,Away,Arsenal,15.0
+1,Giulian Biancone,Nott'm Forest,DEF,0,12,Away,Arsenal,15.0
+1,Willy Boly,Nott'm Forest,DEF,1,12,Away,Arsenal,15.0
+1,Josh Bowler,Nott'm Forest,MID,0,12,Away,Arsenal,15.0
+1,Steve Cook,Nott'm Forest,DEF,0,12,Away,Arsenal,15.0
+1,Danilo dos Santos de Oliveira,Nott'm Forest,MID,2,12,Away,Arsenal,15.0
+1,Emmanuel Dennis,Nott'm Forest,FWD,0,12,Away,Arsenal,15.0
+1,Mohamed Dräger,Nott'm Forest,DEF,0,12,Away,Arsenal,15.0
+1,Felipe Augusto de Almeida Monteiro,Nott'm Forest,DEF,0,12,Away,Arsenal,15.0
+1,Remo Freuler,Nott'm Forest,MID,0,12,Away,Arsenal,15.0
+1,Morgan Gibbs-White,Nott'm Forest,MID,2,12,Away,Arsenal,15.0
+1,Wayne Hennessey,Nott'm Forest,GKP,0,12,Away,Arsenal,15.0
+1,Ethan Horvath,Nott'm Forest,GKP,0,12,Away,Arsenal,15.0
+1,Brennan Johnson,Spurs,MID,2,12,NULL,NULL,
+1,Cheikhou Kouyaté,Nott'm Forest,MID,1,12,Away,Arsenal,15.0
+1,Richie Laryea,Nott'm Forest,DEF,0,12,Away,Arsenal,15.0
+1,Orel Mangala,Nott'm Forest,MID,1,12,Away,Arsenal,15.0
+1,Loïc Mbe Soh,Nott'm Forest,DEF,0,12,Away,Arsenal,15.0
+1,Scott McKenna,Nott'm Forest,DEF,1,12,Away,Arsenal,15.0
+1,Alex Mighten,Nott'm Forest,MID,0,12,Away,Arsenal,15.0
+1,Moussa Niakhaté,Nott'm Forest,DEF,0,12,Away,Arsenal,15.0
+1,Lewis O'Brien,Nott'm Forest,MID,0,12,Away,Arsenal,15.0
+1,Braian Ojeda Rodríguez,Nott'm Forest,MID,0,12,Away,Arsenal,15.0
+1,Jonathan Panzo,Nott'm Forest,DEF,0,12,Away,Arsenal,15.0
+1,Omar Richards,Nott'm Forest,DEF,0,12,Away,Arsenal,15.0
+1,Gustavo Henrique Furtado Scarpa,Nott'm Forest,MID,0,12,Away,Arsenal,15.0
+1,Jonjo Shelvey,Nott'm Forest,MID,0,12,Away,Arsenal,15.0
+1,Sam Surridge,Nott'm Forest,FWD,0,12,Away,Arsenal,15.0
+1,Harry Toffolo,Nott'm Forest,DEF,0,12,Away,Arsenal,15.0
+1,Hwang Ui-jo,Nott'm Forest,FWD,0,12,Away,Arsenal,15.0
+1,Neco Williams,Nott'm Forest,DEF,1,12,Away,Arsenal,15.0
+1,Chris Wood,Nott'm Forest,FWD,1,12,Away,Arsenal,15.0
+1,Joe Worrall,Nott'm Forest,DEF,1,12,Away,Arsenal,15.0
+1,Ryan Yates,Nott'm Forest,MID,2,12,Away,Arsenal,15.0
+1,Anel Ahmedhodžić,Sheffield Utd,DEF,1,14,Home,Crystal Palace,3.0
+1,Jordan Amissah,Sheffield Utd,GKP,0,14,Home,Crystal Palace,3.0
+1,George Baldock,Sheffield Utd,DEF,2,14,Home,Crystal Palace,3.0
+1,Chris Basham,Sheffield Utd,DEF,2,14,Home,Crystal Palace,3.0
+1,Sander Berge,Burnley,MID,2,19,Home,Man City,8.0
+1,Jayden Bogle,Sheffield Utd,DEF,0,14,Home,Crystal Palace,3.0
+1,Rhian Brewster,Sheffield Utd,FWD,0,14,Home,Crystal Palace,3.0
+1,Ismaila Coulibaly,Sheffield Utd,MID,0,14,Home,Crystal Palace,3.0
+1,Adam Davies,Sheffield Utd,GKP,0,14,Home,Crystal Palace,3.0
+1,John Egan,Sheffield Utd,DEF,2,14,Home,Crystal Palace,3.0
+1,John Fleck,Sheffield Utd,MID,0,14,Home,Crystal Palace,3.0
+1,Wes Foderingham,Sheffield Utd,GKP,4,14,Home,Crystal Palace,3.0
+1,Daniel Jebbison,Sheffield Utd,FWD,0,14,Home,Crystal Palace,3.0
+1,Max Lowe,Sheffield Utd,DEF,2,14,Home,Crystal Palace,3.0
+1,Oliver McBurnie,Sheffield Utd,FWD,0,14,Home,Crystal Palace,3.0
+1,Iliman Ndiaye,Sheffield Utd,FWD,0,14,Home,Crystal Palace,3.0
+1,Rhys Norrington-Davies,Sheffield Utd,DEF,0,14,Home,Crystal Palace,3.0
+1,Oliver Norwood,Sheffield Utd,MID,2,14,Home,Crystal Palace,3.0
+1,Ben Osborn,Sheffield Utd,MID,2,14,Home,Crystal Palace,3.0
+1,William Osula,Sheffield Utd,FWD,1,14,Home,Crystal Palace,3.0
+1,Brandon Austin,Spurs,GKP,0,13,Away,Brentford,2.45
+1,Rodrigo Bentancur,Spurs,MID,0,13,Away,Brentford,2.45
+1,Yves Bissouma,Spurs,MID,2,13,Away,Brentford,2.45
+1,Bryan Gil Salvatierra,Spurs,MID,0,13,Away,Brentford,2.45
+1,Ben Davies,Spurs,DEF,0,13,Away,Brentford,2.45
+1,Eric Dier,Spurs,DEF,0,13,Away,Brentford,2.45
+1,Emerson Leite de Souza Junior,Spurs,DEF,8,13,Away,Brentford,2.45
+1,Fraser Forster,Spurs,GKP,0,13,Away,Brentford,2.45
+1,Pierre-Emile Højbjerg,Spurs,MID,0,13,Away,Brentford,2.45
+1,Harry Kane,Spurs,FWD,0,13,Away,Brentford,2.45
+1,Dejan Kulusevski,Spurs,MID,2,13,Away,Brentford,2.45
+1,Hugo Lloris,Spurs,GKP,0,13,Away,Brentford,2.45
+1,Giovani Lo Celso,Spurs,MID,0,13,Away,Brentford,2.45
+1,James Maddison,Spurs,MID,9,13,Away,Brentford,2.45
+1,Tanguy Ndombélé Alvaro,Spurs,MID,0,13,Away,Brentford,2.45
+1,Pedro Porro,Spurs,DEF,0,13,Away,Brentford,2.45
+1,Ivan Perišić,Spurs,DEF,1,13,Away,Brentford,2.45
+1,Sergio Reguilón,Brentford,DEF,0,13,Home,Spurs,2.75
+1,Richarlison de Andrade,Spurs,MID,2,13,Away,Brentford,2.45
+1,Joe Rodon,Spurs,DEF,0,13,Away,Brentford,2.45
+1,Cristian Romero,Spurs,DEF,7,13,Away,Brentford,2.45
+1,Davinson Sánchez,Spurs,DEF,0,13,Away,Brentford,2.45
+1,Pape Matar Sarr,Spurs,MID,1,13,Away,Brentford,2.45
+1,Ryan Sessegnon,Spurs,DEF,0,13,Away,Brentford,2.45
+1,Oliver Skipp,Spurs,MID,1,13,Away,Brentford,2.45
+1,Son Heung-min,Spurs,MID,2,13,Away,Brentford,2.45
+1,Djed Spence,Spurs,DEF,0,13,Away,Brentford,2.45
+1,Japhet Tanganga,Spurs,DEF,0,13,Away,Brentford,2.45
+1,Destiny Udogie,Spurs,DEF,1,13,Away,Brentford,2.45
+1,Guglielmo Vicario,Spurs,GKP,1,13,Away,Brentford,2.45
+1,Alfie Whiteman,Spurs,GKP,0,13,Away,Brentford,2.45
+1,Nayef Aguerd,West Ham,DEF,2,14,Away,Bournemouth,2.55
+1,Michail Antonio,West Ham,FWD,1,14,Away,Bournemouth,2.55
+1,Alphonse Areola,West Ham,GKP,3,14,Away,Bournemouth,2.55
+1,Saïd Benrahma,West Ham,MID,2,14,Away,Bournemouth,2.55
+1,Jarrod Bowen,West Ham,MID,9,14,Away,Bournemouth,2.55
+1,Maxwel Cornet,West Ham,MID,1,14,Away,Bournemouth,2.55
+1,Vladimír Coufal,West Ham,DEF,2,14,Away,Bournemouth,2.55
+1,Conor Coventry,West Ham,MID,0,14,Away,Bournemouth,2.55
+1,Aaron Cresswell,West Ham,DEF,0,14,Away,Bournemouth,2.55
+1,Flynn Downes,West Ham,MID,0,14,Away,Bournemouth,2.55
+1,Emerson Palmieri dos Santos,West Ham,DEF,1,14,Away,Bournemouth,2.55
+1,Lukasz Fabianski,West Ham,GKP,0,14,Away,Bournemouth,2.55
+1,Pablo Fornals Malla,West Ham,MID,2,14,Away,Bournemouth,2.55
+1,Danny Ings,West Ham,FWD,1,14,Away,Bournemouth,2.55
+1,Ben Johnson,West Ham,DEF,0,14,Away,Bournemouth,2.55
+1,Thilo Kehrer,West Ham,DEF,1,14,Away,Bournemouth,2.55
+1,Divin Mubama,West Ham,FWD,0,14,Away,Bournemouth,2.55
+1,Lucas Tolentino Coelho de Lima,West Ham,MID,1,14,Away,Bournemouth,2.55
+1,Declan Rice,Arsenal,MID,2,12,Home,Nott'm Forest,1.18
+1,Gianluca Scamacca,West Ham,FWD,0,14,Away,Bournemouth,2.55
+1,Tomáš Souček,West Ham,MID,7,14,Away,Bournemouth,2.55
+1,Nikola Vlašić,West Ham,MID,0,14,Away,Bournemouth,2.55
+1,Kurt Zouma,West Ham,DEF,2,14,Away,Bournemouth,2.55
+1,Rayan Aït-Nouri,Wolves,DEF,1,19,Away,Man Utd,9.0
+1,Daniel Bentley,Wolves,GKP,0,19,Away,Man Utd,9.0
+1,Bendegúz Bolla,Wolves,DEF,0,19,Away,Man Utd,9.0
+1,Hugo Bueno López,Wolves,DEF,1,19,Away,Man Utd,9.0
+1,Francisco Jorge Tomás Oliveira,Wolves,MID,0,19,Away,Man Utd,9.0
+1,Luke Cundle,Wolves,MID,0,19,Away,Man Utd,9.0
+1,Craig Dawson,Wolves,DEF,2,19,Away,Man Utd,9.0
+1,Fábio Silva,Wolves,FWD,1,19,Away,Man Utd,9.0
+1,Ryan Giles,Luton,DEF,0,14,Away,Brighton,9.0
+1,Gonçalo Manuel Ganchinho Guedes,Wolves,MID,0,19,Away,Man Utd,9.0
+1,Joe Hodge,Wolves,MID,0,19,Away,Man Utd,9.0
+1,Ki-Jana Hoever,Wolves,DEF,0,19,Away,Man Utd,9.0
+1,Hwang Hee-chan,Wolves,MID,1,19,Away,Man Utd,9.0
+1,Raúl Jiménez,Fulham,FWD,1,14,Away,Everton,3.3
+1,João Victor Gomes da Silva,Wolves,MID,2,19,Away,Man Utd,9.0
+1,Jonathan Castro Otto,Wolves,DEF,0,19,Away,Man Utd,9.0
+1,Bruno Cavaco Jordão,Wolves,MID,0,19,Away,Man Utd,9.0
+1,Sasa Kalajdzic,Wolves,FWD,1,19,Away,Man Utd,9.0
+1,Max Kilman,Wolves,DEF,2,19,Away,Man Utd,9.0
+1,Tom King,Wolves,GKP,0,19,Away,Man Utd,9.0
+1,Mario Lemina,Wolves,MID,1,19,Away,Man Utd,9.0
+1,Matheus Luiz Nunes,Man City,MID,2,19,NULL,NULL,
+1,Pedro Lomba Neto,Wolves,MID,1,19,Away,Man Utd,9.0
+1,Daniel Castelo Podence,Wolves,MID,0,19,Away,Man Utd,9.0
+1,José Malheiro de Sá,Wolves,GKP,2,19,Away,Man Utd,9.0
+1,Pablo Sarabia,Wolves,MID,3,19,Away,Man Utd,9.0
+1,Matija Šarkić,Wolves,GKP,0,19,Away,Man Utd,9.0
+1,Nélson Cabral Semedo,Wolves,DEF,2,19,Away,Man Utd,9.0
+1,Toti António Gomes,Wolves,DEF,0,19,Away,Man Utd,9.0
+1,Boubacar Traoré,Wolves,MID,0,19,Away,Man Utd,9.0
+1,Tom Lockyer,Luton,DEF,0,14,Away,Brighton,9.0
+1,Jack Robinson,Sheffield Utd,DEF,2,14,Home,Crystal Palace,3.0
+1,Angelo Ogbonna,West Ham,DEF,0,14,Away,Bournemouth,2.55
+1,Reiss Nelson,Arsenal,MID,0,12,Home,Nott'm Forest,1.18
+1,Andy Lonergan,Everton,GKP,0,14,Home,Fulham,2.2
+1,Loris Karius,Newcastle,GKP,0,16,Home,Aston Villa,1.75
+1,Paul Dummett,Newcastle,DEF,0,16,Home,Aston Villa,1.75
+1,Pelly Ruddock Mpanzu,Luton,MID,2,14,Away,Brighton,9.0
+1,Manor Solomon,Spurs,MID,0,13,Away,Brentford,2.45
+1,Pau Torres,Aston Villa,DEF,0,16,Away,Newcastle,4.6
+1,Jurriën Timber,Arsenal,DEF,0,12,Home,Nott'm Forest,1.18
+1,Tahith Chong,Luton,MID,2,14,Away,Brighton,9.0
+1,Anis Slimane,Sheffield Utd,MID,0,14,Home,Crystal Palace,3.0
+1,Ashley Young,Everton,DEF,2,14,Home,Fulham,2.2
+1,Ângelo Gabriel Borges Damaceno,Chelsea,MID,0,15,Home,Liverpool,2.9
+1,Matheus Santos Carneiro Da Cunha,Wolves,FWD,2,19,Away,Man Utd,9.0
+1,Willian Borges da Silva,Fulham,MID,0,14,Away,Everton,3.3
+1,Yasser Larouci,Sheffield Utd,DEF,1,14,Home,Crystal Palace,3.0
+1,Bénie Traoré,Sheffield Utd,FWD,2,14,Home,Crystal Palace,3.0
+1,Zeki Amdouni,Burnley,FWD,2,19,Home,Man City,8.0
+1,Milos Kerkez,Bournemouth,DEF,2,14,Home,West Ham,2.7
+1,James Trafford,Burnley,GKP,2,19,Home,Man City,8.0
+1,André Onana,Man Utd,GKP,9,19,Home,Wolves,1.33
+1,Matt Doherty,Wolves,DEF,0,19,Away,Man Utd,9.0
+1,Moussa Diaby,Aston Villa,MID,7,16,Away,Newcastle,4.6
+1,Nathan Redmond,Burnley,MID,1,19,Home,Man City,8.0
+1,Arnaut Danjuma Groeneveld,Everton,MID,1,14,Home,Fulham,2.2
+1,Issa Kaboré,Luton,DEF,1,14,Away,Brighton,9.0
+1,Harvey Barnes,Newcastle,MID,11,16,Home,Aston Villa,1.75
+1,Olu Aina,Nott'm Forest,DEF,0,12,Away,Arsenal,15.0
+1,Luca Koleosho,Burnley,MID,2,19,Home,Man City,8.0
+1,Igor Julio dos Santos de Paulo,Brighton,DEF,0,14,Home,Luton,1.33
+1,Ionuț Radu,Bournemouth,GKP,0,14,Home,West Ham,2.7
+1,Jacob Bruun Larsen,Burnley,MID,1,19,Home,Man City,8.0
+1,Ian Maatsen,Chelsea,MID,1,15,Home,Liverpool,2.9
+1,Calvin Bassey,Fulham,DEF,0,14,Away,Everton,3.3
+1,Axel Disasi,Chelsea,DEF,11,15,Home,Liverpool,2.9
+1,Lesley Ugochukwu,Chelsea,MID,1,15,Home,Liverpool,2.9
+1,Thomas Kaminski,Luton,GKP,3,14,Away,Brighton,9.0
+1,Matheus França de Oliveira,Crystal Palace,MID,0,14,Away,Sheffield Utd,2.38
+1,Joško Gvardiol,Man City,DEF,1,19,Away,Burnley,1.33
+1,Rasmus Højlund,Man Utd,FWD,0,19,Home,Wolves,1.33
+1,Omari Kellyman,Aston Villa,MID,0,16,Away,Newcastle,4.6
+1,Ben Greenwood,Bournemouth,DEF,0,14,Home,West Ham,2.7
+1,Michael Olakigbe,Brentford,MID,0,13,Home,Spurs,2.75
+1,Jack Hinshelwood,Brighton,MID,0,14,Home,Luton,1.33
+1,Owen Dodgson,Burnley,DEF,0,19,Home,Man City,8.0
+1,Mason Burstow,Chelsea,FWD,0,15,Home,Liverpool,2.9
+1,Lewis Dobbin,Everton,MID,1,14,Home,Fulham,2.2
+1,Luc De Fougerolles,Fulham,DEF,0,14,Away,Everton,3.3
+1,Jarell Quansah,Liverpool,DEF,0,15,Away,Chelsea,2.38
+1,Bobby Clark,Liverpool,MID,0,15,Away,Chelsea,2.38
+1,Ben Doak,Liverpool,MID,1,15,Away,Chelsea,2.38
+1,James McConnell,Liverpool,MID,0,15,Away,Chelsea,2.38
+1,Ross Barkley,Luton,MID,0,14,Away,Brighton,9.0
+1,Jacob Brown,Luton,FWD,4,14,Away,Brighton,9.0
+1,Omari Forson,Man Utd,MID,0,19,Home,Wolves,1.33
+1,Tino Livramento,Newcastle,DEF,0,16,Home,Aston Villa,1.75
+1,Alex Murphy,Newcastle,DEF,0,16,Home,Aston Villa,1.75
+1,Lewis Miley,Newcastle,MID,0,16,Home,Aston Villa,1.75
+1,George Shelvey,Nott'm Forest,GKP,0,12,Away,Arsenal,15.0
+1,Josh Powell,Nott'm Forest,DEF,0,12,Away,Arsenal,15.0
+1,Vini de Souza Costa,Sheffield Utd,MID,1,14,Home,Crystal Palace,3.0
+1,Micky van de Ven,Spurs,DEF,1,13,Away,Brentford,2.45
+1,Dane Scarlett,Spurs,FWD,0,13,Away,Brentford,2.45
+1,Alejo Véliz,Spurs,FWD,0,13,Away,Brentford,2.45
+1,Edson Álvarez Velázquez,West Ham,MID,0,14,Away,Bournemouth,2.55
+1,Max Aarons,Bournemouth,DEF,2,14,Home,West Ham,2.7
+1,Alex Scott,Bournemouth,MID,0,14,Home,West Ham,2.7
+1,Youssef Ramalho Chermiti,Everton,FWD,0,14,Home,Fulham,2.2
+1,Karl Hein,Arsenal,GKP,0,12,Home,Nott'm Forest,1.18
+1,Joseph Anang,West Ham,GKP,0,14,Away,Bournemouth,2.55
+1,Aidan Francis-Clarke,Luton,DEF,0,14,Away,Brighton,9.0
+1,Thomas Cannon,Everton,FWD,0,14,Home,Fulham,2.2
+1,Tyler Onyango,Everton,MID,0,14,Home,Fulham,2.2
+1,Jay Stansfield,Fulham,FWD,0,14,Away,Everton,3.3
+1,Matthew Dibley-Dias,Fulham,MID,0,14,Away,Everton,3.3
+1,Femi Seriki,Sheffield Utd,DEF,0,14,Home,Crystal Palace,3.0
+1,Louie Marsh,Sheffield Utd,FWD,0,14,Home,Crystal Palace,3.0
+1,Andre Brooks,Sheffield Utd,MID,1,14,Home,Crystal Palace,3.0
+1,Antwoine Hackford,Sheffield Utd,FWD,1,14,Home,Crystal Palace,3.0
+1,Jesurun Rak-Sakyi,Crystal Palace,MID,0,14,Away,Sheffield Utd,2.38
+1,John-Kymani Gordon,Crystal Palace,FWD,0,14,Away,Sheffield Utd,2.38
+1,Lucas Bergström,Chelsea,GKP,0,15,Home,Liverpool,2.9
