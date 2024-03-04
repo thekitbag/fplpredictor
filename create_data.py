@@ -227,8 +227,10 @@ def get_data_for_gameweek(gameweek):
                 odds_data = getTeamOddsFromIds(player['id'], player['explain'][0]['fixture'])
                 previous_weeks_performance = get_previous_weeks_performance(player['id'], previous_weeks_data)
                 player_data = {
+                    #FPL Static Data
                     'gameweek': gameweek,
                     'player_id': player['id'], 
+                    'player_name': getPlayerNameFromPlayerId(player['id']),
                     'team_id': team_data['team_id'],
                     'strength_overall_home': team_data['strength_overall_home'],
                     'strength_overall_away': team_data['strength_overall_away'],
@@ -237,9 +239,11 @@ def get_data_for_gameweek(gameweek):
                     'strength_defence_home': team_data['strength_defence_home'],
                     'strength_defence_away': team_data['strength_defence_away'],
                     'position_id': getPlayerPositionFromPlayerId(player['id'])['position_id'],
+                    #Fixture Data
                     'kickoff_time': getkickoffTimeFromFixtureId(player['explain'][0]['fixture']),
                     'home_or_away_id':  home_or_away_data['home_or_away_id'],
                     'opposition_id': home_or_away_data['opposition_id'],
+                    'opposition_name': home_or_away_data['opposition'],
                     #Recent Form
                     'recent_points': previous_weeks_performance['total_points'],
                     'recent_minutes': previous_weeks_performance['total_minutes_played'],
@@ -270,6 +274,6 @@ def create_csv(START_GAMEWEEK, END_GAMEWEEK):
             header = gameweek == START_GAMEWEEK  # Add header only for the first write  
             gameweek_df.to_csv(csvfile, mode='a', index=False, header=header)
 
-#create_csv(5, 25)
+create_csv(5, 25)
 
 
