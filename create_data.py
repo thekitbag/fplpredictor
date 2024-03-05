@@ -255,8 +255,9 @@ def get_data_for_gameweek(gameweek):
                     'over_four_fpl_points': 1 if player['stats']['total_points'] > 4 else 0
                 }
                 gw_data.append(player_data)
-
-    return pd.DataFrame(gw_data)
+        gw_df = pd.DataFrame(gw_data)
+     
+    return gw_df
 
 
 

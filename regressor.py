@@ -11,7 +11,8 @@ data = pd.read_csv('FPL_and_odds_data_numeric.csv')
 cleaned_data = data.dropna(subset=['win_odds'])
 
 # Select relevant features
-features = cleaned_data[['player_id', 
+features = cleaned_data[['player_id',
+                        'team_id',
                         'position_id', 
                         'kickoff_time', 
                         'home_or_away_id', 
@@ -59,6 +60,9 @@ X_train, X_test, y_train, y_test = train_test_split(features, target, test_size=
 model = RandomForestRegressor(max_depth=8, min_samples_split=10, n_estimators=200, random_state=42)
 model.fit(X_train, y_train)  # Train on the full training set
 
+with open('trained_regressor_model.pkl', 'wb') as f:
+    pickle.dump(model, f)
+
 
 predictions = model.predict(X_test)
 
@@ -74,6 +78,4 @@ importances = model.feature_importances_
 
 for feature, importance in zip(column_names, importances):
     print(f'{feature}: {importance}')
-
-
 
