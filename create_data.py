@@ -166,15 +166,43 @@ def get_previous_weeks_performance(player_id, previous_weeks_data):
     player_history = previous_weeks_data.loc[previous_weeks_data['id'] == player_id]
 
     total_points = 0
-    total_minutes_played = 0
+    total_bps = 0
+    total_influence = 0
+    total_creativity = 0
+    total_threat = 0
+    total_xg = 0
+    total_xa = 0
+    total_xgi = 0
+    total_xgc = 0
     for index, row in player_history.iterrows():
         points = row['stats']['total_points']
         total_points += points
-        minutes = row['stats']['minutes']
-        total_minutes_played += minutes
+        bps = row['stats']['bps']
+        total_bps += bps
+        influence = row['stats']['influence']
+        total_influence += float(influence)
+        creativity = row['stats']['creativity']
+        total_creativity += float(creativity)
+        threat = row['stats']['threat']
+        total_threat += float(threat)
+        xg = row['stats']['expected_goals']
+        total_xg += float(xg)
+        xa = row['stats']['expected_assists']
+        total_xa += float(xa)
+        xgi = row['stats']['expected_goal_involvements']
+        total_xgi += float(xgi)
+        xgc = row['stats']['expected_goals_conceded']
+        total_xgc += float(xgc) 
 
     resp['total_points'] = total_points
-    resp['total_minutes_played'] = total_minutes_played
+    resp['total_bps'] = total_bps
+    resp['total_influence'] = total_influence
+    resp['total_creativity'] = total_creativity
+    resp['total_threat'] = total_threat
+    resp['total_xg'] = total_xg
+    resp['total_xa'] = total_xa
+    resp['total_xgi'] = total_xgi
+    resp['total_xgc'] = total_xgc
 
     return  resp
 
@@ -187,85 +215,58 @@ def get_data_for_gameweek(gameweek):
 
     previous_weeks_data = get_previous_weeks_data(gameweek)
 
+    for player in data['elements']:
+        if len(player['explain']) > 0:
+            home_or_away_data = getHomeOrAwayDataFromIds(player['id'], player['explain'][0]['fixture'])
+            team_data = getPlayerTeamFromPlayerId(player['id'])
+            odds_data = getTeamOddsFromIds(player['id'], player['explain'][0]['fixture'])
+            previous_weeks_performance = get_previous_weeks_performance(player['id'], previous_weeks_data)
+            player_data = {
+                #FPL Static Data
+                'gameweek': gameweek,
+                'player_id': player['id'], 
+                'player_name': getPlayerNameFromPlayerId(player['id']),
+                'team_id': team_data['team_id'],
+                'strength_overall_home': team_data['strength_overall_home'],
+                'strength_overall_away': team_data['strength_overall_away'],
+                'strength_attack_home': team_data['strength_attack_home'],
+                'strength_attack_away': team_data['strength_attack_away'],
+                'strength_defence_home': team_data['strength_defence_home'],
+                'strength_defence_away': team_data['strength_defence_away'],
+                'position_id': getPlayerPositionFromPlayerId(player['id'])['position_id'],
+                #Fixture Data
+                'kickoff_time': getkickoffTimeFromFixtureId(player['explain'][0]['fixture']),
+                'home_or_away_id':  home_or_away_data['home_or_away_id'],
+                'opposition_id': home_or_away_data['opposition_id'],
+                'opposition_name': home_or_away_data['opposition'],
+                #Recent Form
+                'recent_points': previous_weeks_performance['total_points'],
+                'total_bps': previous_weeks_performance['total_bps'],
+                'total_influence': previous_weeks_performance['total_influence'],
+                'total_creativity': previous_weeks_performance['total_creativity'],
+                'total_threat': previous_weeks_performance['total_threat'],
+                'total_xg': previous_weeks_performance['total_xg'],
+                'total_xa': previous_weeks_performance['total_xa'],
+                'total_xgi': previous_weeks_performance['total_xgi'],
+                'total_xgc': previous_weeks_performance['total_xgc'],
+                #Odds Data
+                'win_odds': odds_data['win_odds'],
+                '>2.5': odds_data['>2.5'],
+                #Target Variables: 
+                'minutes': player['stats']['minutes'],
+                'fpl_points': player['stats']['total_points'],
+                'over_four_fpl_points': 1 if player['stats']['total_points'] > 4 else 0
+                
+            }
+            gw_data.append(player_data)
+    gw_df = pd.DataFrame(gw_data)
+    gw_df = gw_df[gw_df['minutes'] >= 60] 
 
-    if HUMAN_READABLE_NAMES == True:
-
-        for player in data['elements']:
-            if len(player['explain']) > 0:
-                home_or_away_data = getHomeOrAwayDataFromIds(player['id'], player['explain'][0]['fixture'])
-                team_data = getPlayerTeamFromPlayerId(player['id'])['team_name']
-                odds_data = getTeamOddsFromIds(player['id'], player['explain'][0]['fixture'])
-                previous_weeks_performance = get_previous_weeks_performance(player['id'], previous_weeks_data)
-                player_data = {
-                    'gameweek': gameweek,
-                    'player_name': getPlayerNameFromPlayerId(player['id']),
-                    'team_name': team_data['team_name'],
-                    'strength_overall_home': team_data['strength_overall_home'],
-                    'strength_overall_away': team_data['strength_overall_away'],
-                    'strength_attack_home': team_data['strength_attack_home'],
-                    'strength_attack_away': team_data['strength_attack_away'],
-                    'strength_defence_home': team_data['strength_defence_home'],
-                    'strength_defence_away': team_data['strength_defence_away'],
-                    'position_name': getPlayerPositionFromPlayerId(player['id'])['position_name'],
-                    'kickoff_time': getkickoffTimeFromFixtureId(player['explain'][0]['fixture']),
-                    'home_or_away':  home_or_away_data['home_or_away'],
-                    'opposition_name': home_or_away_data['opposition'],
-                    'win_odds': odds_data['win_odds'],
-                    '>2.5': odds_data['>2.5'],
-                    # target variables: 
-                    'fpl_points': player['stats']['total_points'],
-                    'over_four_fpl_points': 1 if player['stats']['total_points'] > 4 else 0
-                }
-                gw_data.append(player_data)
-    
-    else:
-
-        for player in data['elements']:
-            if len(player['explain']) > 0:
-                home_or_away_data = getHomeOrAwayDataFromIds(player['id'], player['explain'][0]['fixture'])
-                team_data = getPlayerTeamFromPlayerId(player['id'])
-                odds_data = getTeamOddsFromIds(player['id'], player['explain'][0]['fixture'])
-                previous_weeks_performance = get_previous_weeks_performance(player['id'], previous_weeks_data)
-                player_data = {
-                    #FPL Static Data
-                    'gameweek': gameweek,
-                    'player_id': player['id'], 
-                    'player_name': getPlayerNameFromPlayerId(player['id']),
-                    'team_id': team_data['team_id'],
-                    'strength_overall_home': team_data['strength_overall_home'],
-                    'strength_overall_away': team_data['strength_overall_away'],
-                    'strength_attack_home': team_data['strength_attack_home'],
-                    'strength_attack_away': team_data['strength_attack_away'],
-                    'strength_defence_home': team_data['strength_defence_home'],
-                    'strength_defence_away': team_data['strength_defence_away'],
-                    'position_id': getPlayerPositionFromPlayerId(player['id'])['position_id'],
-                    #Fixture Data
-                    'kickoff_time': getkickoffTimeFromFixtureId(player['explain'][0]['fixture']),
-                    'home_or_away_id':  home_or_away_data['home_or_away_id'],
-                    'opposition_id': home_or_away_data['opposition_id'],
-                    'opposition_name': home_or_away_data['opposition'],
-                    #Recent Form
-                    'recent_points': previous_weeks_performance['total_points'],
-                    'recent_minutes': previous_weeks_performance['total_minutes_played'],
-                    #Odds Data
-                    'win_odds': odds_data['win_odds'],
-                    '>2.5': odds_data['>2.5'],
-                    #Target Variables: 
-                    'fpl_points': player['stats']['total_points'],
-                    'over_four_fpl_points': 1 if player['stats']['total_points'] > 4 else 0
-                }
-                gw_data.append(player_data)
-        gw_df = pd.DataFrame(gw_data)
-     
     return gw_df
 
 
 
-def create_csv(START_GAMEWEEK, END_GAMEWEEK):
-    if HUMAN_READABLE_NAMES == True:
-        filename = 'FPL_and_odds_data_human_readable.csv'
-    else:
-        filename = 'FPL_and_odds_data_numeric.csv'
+def create_csv(START_GAMEWEEK, END_GAMEWEEK, filename):
 
     with open(filename, 'w', newline='') as csvfile: 
         writer = csv.writer(csvfile) 
@@ -275,6 +276,6 @@ def create_csv(START_GAMEWEEK, END_GAMEWEEK):
             header = gameweek == START_GAMEWEEK  # Add header only for the first write  
             gameweek_df.to_csv(csvfile, mode='a', index=False, header=header)
 
-create_csv(5, 25)
+create_csv(21, 25, "test_data.csv")
 
 
