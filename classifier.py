@@ -27,14 +27,23 @@ def prep_test_or_train_data(data_csv):
                             'strength_defence_home',
                             'strength_defence_away',
                             'recent_points',
-                            'total_bps',
-                            'total_influence',
-                            'total_creativity',
-                            'total_threat',
-                            'total_xg', 
-                            'total_xa',
-                            'total_xgi',
-                            'total_xgc',
+                            'recent_bps',
+                            'recent_influence',
+                            'recent_creativity',
+                            'recent_threat',
+                            'recent_xg', 
+                            'recent_xa',
+                            'recent_xgi',
+                            'recent_xgc',
+                            'season_points',
+                            'season_bps',
+                            'season_influence',
+                            'season_creativity',
+                            'season_threat',
+                            'season_xg',
+                            'season_xa',
+                            'season_xgi',
+                            'season_xgc',
                             'win_odds',
                             '>2.5'
                             ]]
@@ -102,4 +111,4 @@ def test_model(model_filename):
 
 
 #train_and_save_model('trained_classifier_model.pkl')
-test_model('trained_classifier_model.pkl')
+#test_model('trained_classifier_model.pkl')

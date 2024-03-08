@@ -2,6 +2,7 @@ import json
 import pandas as pd
 import requests
 import csv
+import time
 from datetime import datetime, timedelta
 
 # Configuration
@@ -149,7 +150,7 @@ def getTeamOddsFromIds(playerId, fixtureId):
     resp['>2.5'] = "NULL"
     return resp
         
-def get_previous_weeks_data(gameweek):
+def get_previous_four_weeks_data(gameweek):
     all_data = [] 
     for i in range(gameweek - 4, gameweek - 1):
         resp = {}
@@ -158,6 +159,19 @@ def get_previous_weeks_data(gameweek):
         data = response.json()
         df = pd.DataFrame(data['elements'])  # Create a DataFrame
         all_data.append(df)
+    combined_df = pd.concat(all_data, ignore_index=True)  # Concatenate DataFrames
+    return combined_df
+
+def get_season_data(gameweek):
+    all_data = [] 
+    for i in range(1, gameweek):
+        resp = {}
+        response = requests.get(f"https://fantasy.premierleague.com/api/event/{i}/live/")
+        response.raise_for_status()
+        data = response.json()
+        df = pd.DataFrame(data['elements'])  # Create a DataFrame
+        all_data.append(df)
+        time.sleep(0.2)
     combined_df = pd.concat(all_data, ignore_index=True)  # Concatenate DataFrames
     return combined_df
 
@@ -206,21 +220,26 @@ def get_previous_weeks_performance(player_id, previous_weeks_data):
 
     return  resp
 
-
 def get_data_for_gameweek(gameweek):
     gw_data = []
     response = requests.get(f"https://fantasy.premierleague.com/api/event/{gameweek}/live/")
     response.raise_for_status()
     data = response.json()
 
-    previous_weeks_data = get_previous_weeks_data(gameweek)
+    #we get the earlier season data for all players outside of the loop to avoid doing it for every player
+    previous_four_weeks_data = get_previous_four_weeks_data(gameweek)
+    season_data = get_season_data(gameweek)
 
     for player in data['elements']:
         if len(player['explain']) > 0:
             home_or_away_data = getHomeOrAwayDataFromIds(player['id'], player['explain'][0]['fixture'])
             team_data = getPlayerTeamFromPlayerId(player['id'])
             odds_data = getTeamOddsFromIds(player['id'], player['explain'][0]['fixture'])
-            previous_weeks_performance = get_previous_weeks_performance(player['id'], previous_weeks_data)
+
+            #inside the loop we find the past weeks data for the individual player
+            previous_weeks_performance = get_previous_weeks_performance(player['id'], previous_four_weeks_data)
+            season_performance = get_previous_weeks_performance(player['id'], season_data)
+
             player_data = {
                 #FPL Static Data
                 'gameweek': gameweek,
@@ -241,14 +260,24 @@ def get_data_for_gameweek(gameweek):
                 'opposition_name': home_or_away_data['opposition'],
                 #Recent Form
                 'recent_points': previous_weeks_performance['total_points'],
-                'total_bps': previous_weeks_performance['total_bps'],
-                'total_influence': previous_weeks_performance['total_influence'],
-                'total_creativity': previous_weeks_performance['total_creativity'],
-                'total_threat': previous_weeks_performance['total_threat'],
-                'total_xg': previous_weeks_performance['total_xg'],
-                'total_xa': previous_weeks_performance['total_xa'],
-                'total_xgi': previous_weeks_performance['total_xgi'],
-                'total_xgc': previous_weeks_performance['total_xgc'],
+                'recent_bps': previous_weeks_performance['total_bps'],
+                'recent_influence': previous_weeks_performance['total_influence'],
+                'recent_creativity': previous_weeks_performance['total_creativity'],
+                'recent_threat': previous_weeks_performance['total_threat'],
+                'recent_xg': previous_weeks_performance['total_xg'],
+                'recent_xa': previous_weeks_performance['total_xa'],
+                'recent_xgi': previous_weeks_performance['total_xgi'],
+                'recent_xgc': previous_weeks_performance['total_xgc'],
+                #Season_form
+                'season_points': season_performance['total_points'],
+                'season_bps': season_performance['total_bps'],
+                'season_influence': season_performance['total_influence'],
+                'season_creativity': season_performance['total_creativity'],
+                'season_threat': season_performance['total_threat'],
+                'season_xg': season_performance['total_xg'],
+                'season_xa': season_performance['total_xa'],
+                'season_xgi': season_performance['total_xgi'],
+                'season_xgc':season_performance['total_xgc'], 
                 #Odds Data
                 'win_odds': odds_data['win_odds'],
                 '>2.5': odds_data['>2.5'],

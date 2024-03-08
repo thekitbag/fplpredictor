@@ -42,7 +42,7 @@ def predict_for_gameweek(gameweek, column_names):
 column_names = prep_test_or_train_data('test_data.csv')['column_names']
 
 gameweek_predictions = predict_for_gameweek(26, column_names) 
-filename = 'predictionsGW26.csv'
+filename = 'predictionsGW26_new_model.csv'
 
 with open(filename, 'w', newline='') as csvfile: 
     writer = csv.writer(csvfile)
