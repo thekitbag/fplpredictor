@@ -3,6 +3,7 @@ import pandas as pd
 import requests
 import csv
 import time
+import os
 from datetime import datetime, timedelta
 
 # Configuration
@@ -19,7 +20,7 @@ players_df = pd.DataFrame(bootstrap_data['elements'])
 events_df = pd.DataFrame(bootstrap_data['events'])
 phases_df = pd.DataFrame(bootstrap_data['phases'])
 element_types_df = pd.DataFrame(bootstrap_data['element_types'])
-odds_df = pd.read_csv('./data/historic_odds.csv')
+odds_df = pd.read_csv('./raw_data/historic_odds.csv')
 
 
 response = requests.get(FIXTURES_URL)
@@ -152,7 +153,7 @@ def getTeamOddsFromIds(playerId, fixtureId):
         
 def get_previous_four_weeks_data(gameweek):
     all_data = [] 
-    for i in range(gameweek - 4, gameweek - 1):
+    for i in range(gameweek - 3, gameweek):
         resp = {}
         response = requests.get(f"https://fantasy.premierleague.com/api/event/{i}/live/")
         response.raise_for_status()
@@ -171,7 +172,7 @@ def get_season_data(gameweek):
         data = response.json()
         df = pd.DataFrame(data['elements'])  # Create a DataFrame
         all_data.append(df)
-        time.sleep(0.2)
+        time.sleep(0.1)
     combined_df = pd.concat(all_data, ignore_index=True)  # Concatenate DataFrames
     return combined_df
 
@@ -220,6 +221,55 @@ def get_previous_weeks_performance(player_id, previous_weeks_data):
 
     return  resp
 
+def relevantise_data(aggregate_data_dict):
+    """
+    Takes a dictionary of aggregated  data and makes it relevant by returning
+    data that is relevant to them being at home if at home, or awya of away
+    and to their position
+    """
+    relevant_data = {}
+    home_or_away_data = aggregate_data_dict['home_or_away_data']
+    team_data = aggregate_data_dict['team_data']
+    previous_weeks_performance = aggregate_data_dict['previous_weeks_data']
+    season_performance = aggregate_data_dict['season_performance']
+    player_data = aggregate_data_dict['player_data']
+    position = aggregate_data_dict['position']
+
+    home_or_away_id = home_or_away_data['home_or_away_id']
+
+    if home_or_away_id == 1:
+        relevant_data['overall_team_strength'] = team_data['strength_overall_home']
+        if position < 2.5:
+            relevant_data['team_position_relevant_strength'] = team_data['strength_defence_home']
+        elif position > 2.5:
+            relevant_data['team_position_relevant_strength'] = team_data['strength_attack_home']
+        else:
+            raise ValueError("Player position not recognised")
+    elif home_or_away_id == 2:
+        relevant_data['overall_team_strength'] = team_data['strength_overall_away']
+        if position < 2.5:
+            relevant_data['team_position_relevant_strength'] = team_data['strength_defence_away']
+        elif position > 2.5:
+            relevant_data['team_position_relevant_strength'] = team_data['strength_attack_away']
+        else:
+            raise ValueError("Player position not recognised")
+    else:
+        relevant_data['overall_team_strength'] = -1
+        relevant_data['team_position_relevant_strength'] = -1
+
+
+    
+    if position < 2.5:
+        relevant_data['recent_xx'] = 2.5 - float(previous_weeks_performance['total_xgc'])
+        relevant_data['season_xx'] = 2.5 - float(season_performance['total_xgc'])
+    elif position > 2.5:
+        relevant_data['recent_xx'] = previous_weeks_performance['total_xgi']
+        relevant_data['season_xx'] = season_performance['total_xgi']
+    
+    return relevant_data
+    
+
+
 def get_data_for_gameweek(gameweek):
     gw_data = []
     response = requests.get(f"https://fantasy.premierleague.com/api/event/{gameweek}/live/")
@@ -240,19 +290,27 @@ def get_data_for_gameweek(gameweek):
             previous_weeks_performance = get_previous_weeks_performance(player['id'], previous_four_weeks_data)
             season_performance = get_previous_weeks_performance(player['id'], season_data)
 
+            aggregate_data = {
+                'home_or_away_data': home_or_away_data,
+                'team_data': team_data,
+                'odds_data': odds_data,
+                'previous_weeks_data': previous_weeks_performance,
+                'season_performance': season_performance,
+                'player_data': player,
+                'position': getPlayerPositionFromPlayerId(player['id'])['position_id']
+            }
+
+            relevant_data = relevantise_data(aggregate_data)
+
             player_data = {
                 #FPL Static Data
                 'gameweek': gameweek,
                 'player_id': player['id'], 
                 'player_name': getPlayerNameFromPlayerId(player['id']),
                 'team_id': team_data['team_id'],
-                'strength_overall_home': team_data['strength_overall_home'],
-                'strength_overall_away': team_data['strength_overall_away'],
-                'strength_attack_home': team_data['strength_attack_home'],
-                'strength_attack_away': team_data['strength_attack_away'],
-                'strength_defence_home': team_data['strength_defence_home'],
-                'strength_defence_away': team_data['strength_defence_away'],
                 'position_id': getPlayerPositionFromPlayerId(player['id'])['position_id'],
+                'overall_team_strength': relevant_data['overall_team_strength'],
+                'team_position_relevant_strength': relevant_data['team_position_relevant_strength'],
                 #Fixture Data
                 'kickoff_time': getkickoffTimeFromFixtureId(player['explain'][0]['fixture']),
                 'home_or_away_id':  home_or_away_data['home_or_away_id'],
@@ -264,20 +322,14 @@ def get_data_for_gameweek(gameweek):
                 'recent_influence': previous_weeks_performance['total_influence'],
                 'recent_creativity': previous_weeks_performance['total_creativity'],
                 'recent_threat': previous_weeks_performance['total_threat'],
-                'recent_xg': previous_weeks_performance['total_xg'],
-                'recent_xa': previous_weeks_performance['total_xa'],
-                'recent_xgi': previous_weeks_performance['total_xgi'],
-                'recent_xgc': previous_weeks_performance['total_xgc'],
+                'recent_xx': relevant_data['recent_xx'],
                 #Season_form
                 'season_points': season_performance['total_points'],
                 'season_bps': season_performance['total_bps'],
                 'season_influence': season_performance['total_influence'],
                 'season_creativity': season_performance['total_creativity'],
                 'season_threat': season_performance['total_threat'],
-                'season_xg': season_performance['total_xg'],
-                'season_xa': season_performance['total_xa'],
-                'season_xgi': season_performance['total_xgi'],
-                'season_xgc':season_performance['total_xgc'], 
+                'season_xx': relevant_data['season_xx'] ,
                 #Odds Data
                 'win_odds': odds_data['win_odds'],
                 '>2.5': odds_data['>2.5'],
@@ -293,18 +345,143 @@ def get_data_for_gameweek(gameweek):
 
     return gw_df
 
+def get_next_fixture_data(team_id, gameweek):
+    next_fixtures = fixtures_df.loc[fixtures_df['event'] == gameweek]
+
+    for index, row in next_fixtures.iterrows():
+        kickoff = pd.to_datetime(row['kickoff_time'])
+        hour_of_day = kickoff.hour
+        if row['team_h'] == team_id:
+            return {
+                'kickoff_time': hour_of_day,
+                'home_or_away_id': 1,  
+                'opposition_id': row['team_a'],
+                'event_id': row['id']
+            }
+        elif row['team_a'] == team_id:
+            return {
+                'kickoff_time': hour_of_day,
+                'home_or_away_id': 2,  
+                'opposition_id': row['team_h'],
+                'event_id': row['id']
+            }
+
+    return None 
+    
+
+
+def get_future_weeks_data(gameweek):
+    gw_data = []
+    #get previous week's data as a base
+    response = requests.get(f"https://fantasy.premierleague.com/api/event/{gameweek-1}/live/")
+    response.raise_for_status()
+    last_week_data = response.json()
+
+    previous_four_weeks_data = get_previous_four_weeks_data(gameweek+1)
+    season_data = get_season_data(gameweek)
+
+    for player in last_week_data['elements']:
+        if len(player['explain']) > 0:
+            team_data = getPlayerTeamFromPlayerId(player['id'])
+            odds_data = getTeamOddsFromIds(player['id'], player['explain'][0]['fixture'])
+
+            #inside the loop we find the past weeks data for the individual player
+            previous_weeks_performance = get_previous_weeks_performance(player['id'], previous_four_weeks_data)
+            season_performance = get_previous_weeks_performance(player['id'], season_data)
+            next_fixture = get_next_fixture_data(team_data['team_id'], gameweek)
+            odds_data = getTeamOddsFromIds(player['id'], next_fixture['event_id'])
+            home_or_away_data = {
+                'kickoff_time': next_fixture['kickoff_time'],
+                'home_or_away_id':  next_fixture['home_or_away_id'],
+                'opposition_id': next_fixture['opposition_id'],
+            }
+            aggregate_data = {
+                'home_or_away_data': home_or_away_data,
+                'team_data': team_data,
+                'odds_data': odds_data,
+                'previous_weeks_data': previous_weeks_performance,
+                'season_performance': season_performance,
+                'player_data': player,
+                'position': getPlayerPositionFromPlayerId(player['id'])['position_id']
+            }
+
+            relevant_data = relevantise_data(aggregate_data)
+#
+            player_data = {
+                #FPL Static Data
+                'gameweek': gameweek,
+                'player_id': player['id'], 
+                'player_name': getPlayerNameFromPlayerId(player['id']),
+                'team_id': team_data['team_id'],
+                'overall_team_strength': relevant_data['overall_team_strength'],
+                'team_position_relevant_strength': relevant_data['team_position_relevant_strength'],
+                'position_id': getPlayerPositionFromPlayerId(player['id'])['position_id'],
+                #Fixture Data
+                'kickoff_time': next_fixture['kickoff_time'],
+                'home_or_away_id':  next_fixture['home_or_away_id'],
+                'opposition_id': next_fixture['opposition_id'],
+                'opposition_name': 'NULL',
+                #Recent Form
+                'recent_points': previous_weeks_performance['total_points'],
+                'recent_bps': previous_weeks_performance['total_bps'],
+                'recent_influence': previous_weeks_performance['total_influence'],
+                'recent_creativity': previous_weeks_performance['total_creativity'],
+                'recent_threat': previous_weeks_performance['total_threat'],
+                'recent_xx': relevant_data['recent_xx'],
+                #Season_form
+                'season_points': season_performance['total_points'],
+                'season_bps': season_performance['total_bps'],
+                'season_influence': season_performance['total_influence'],
+                'season_creativity': season_performance['total_creativity'],
+                'season_threat': season_performance['total_threat'],
+                'season_xx': relevant_data['season_xx'],
+                #Odds Data
+                'win_odds': odds_data['win_odds'],
+                '>2.5': odds_data['>2.5'],
+                #Target Variables: 
+                'minutes': -1,
+                'fpl_points': -1,
+                'over_four_fpl_points': -1
+                
+            }
+            gw_data.append(player_data)
+    gw_df = pd.DataFrame(gw_data)
+    
+    filename = f'gameweek{gameweek}_data.csv'
+
+    folder_path = 'processed_data'
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+
+    filepath = os.path.join(folder_path, filename) 
+
+
+    with open(filepath, 'w', newline='') as csvfile: 
+        writer = csv.writer(csvfile) 
+        gw_df.to_csv(csvfile, mode='a', index=False)
+
+
 
 
 def create_csv(START_GAMEWEEK, END_GAMEWEEK, filename):
 
-    with open(filename, 'w', newline='') as csvfile: 
+    folder_path = 'processed_data'
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+
+    filepath = os.path.join(folder_path, filename) 
+
+    with open(filepath, 'w', newline='') as csvfile: 
         writer = csv.writer(csvfile) 
 
         for gameweek in range(START_GAMEWEEK, END_GAMEWEEK + 1):
             gameweek_df = get_data_for_gameweek(gameweek)
-            header = gameweek == START_GAMEWEEK  # Add header only for the first write  
+            header = gameweek == START_GAMEWEEK 
+            print(f'Writing data for gameweek {gameweek} to {filepath}')
             gameweek_df.to_csv(csvfile, mode='a', index=False, header=header)
 
-create_csv(21, 25, "test_data.csv")
+#create_csv(4, 21, "training_data.csv")
+
+get_future_weeks_data(28)
 
 
