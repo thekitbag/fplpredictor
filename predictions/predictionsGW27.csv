@@ -1,0 +1,833 @@
+player_name,opposition_name,points,predicted_high_scorer
+Brewster,Arsenal,0,0.99569714
+Leite de Souza Junior,Crystal Palace,2,0.99321693
+Assignon,Bournemouth,1,0.99294746
+Holgate,Arsenal,0,0.99196565
+Jorgensen,Chelsea,0,0.9908839
+Lo Celso,Crystal Palace,1,0.9903437
+Bissouma,Crystal Palace,2,0.98821265
+Mengi,Aston Villa,1,0.9873732
+Davies,Crystal Palace,0,0.9873454
+Esteve,Bournemouth,1,0.987017
+Wright,Man Utd,0,0.9857707
+Duarte Ribeiro,Liverpool,0,0.9855188
+King,Brighton,0,0.9855158
+Gómez,Man Utd,0,0.98529446
+Hashioka,Aston Villa,1,0.98507255
+Bobb,Man Utd,1,0.98465353
+Grealish,Man Utd,0,0.9842626
+Danjuma Groeneveld,West Ham,0,0.9833735
+Sarr,Crystal Palace,1,0.9823216
+Jiménez,Brighton,0,0.9818169
+Dasilva,Chelsea,0,0.98070556
+Chambers,Luton,0,0.97994107
+Delcroix,Bournemouth,0,0.979287
+Toffolo,Liverpool,2,0.97844726
+Clark,Nott'm Forest,1,0.9780782
+Nwaneri,Sheffield Utd,0,0.9780221
+Lascelles,Wolves,0,0.97742814
+Lewis-Potter,Chelsea,0,0.9768704
+Yarmoliuk,Chelsea,1,0.9764573
+Tsimikas,Nott'm Forest,1,0.9761999
+Ballo-Touré,Brighton,0,0.97610635
+Porro,Crystal Palace,0,0.9753307
+White,Wolves,0,0.97411805
+Johnson,Crystal Palace,8,0.9732858
+Quansah,Nott'm Forest,0,0.97166437
+Robinson,Arsenal,-1,0.9709363
+Disasi,Brentford,9,0.96993536
+Konaté,Nott'm Forest,8,0.9697384
+Tarkowski,West Ham,1,0.9692453
+Massengo,Bournemouth,0,0.9688167
+Gomes Betuncal,West Ham,4,0.96775734
+Coleman,West Ham,0,0.9677545
+Taylor,Bournemouth,1,0.96764284
+Bandeira,Sheffield Utd,0,0.9674402
+Koumas,Nott'm Forest,0,0.96643907
+Gil Salvatierra,Crystal Palace,0,0.9662646
+Ramsey,Luton,1,0.96608204
+Hedilazio,Bournemouth,1,0.9655403
+Cork,Bournemouth,0,0.9655403
+Salah,Nott'm Forest,0,0.9639593
+Sadi,Burnley,0,0.9636745
+Donley,Crystal Palace,0,0.9623037
+Mykolenko,West Ham,1,0.96204257
+Akanji,Man Utd,0,0.9617369
+Aké,Man Utd,2,0.9617369
+Foden,Man Utd,15,0.9617369
+Gato Alves Dias,Man Utd,2,0.9617369
+Haaland,Man Utd,6,0.9617369
+Hernandez,Man Utd,10,0.9617369
+Stones,Man Utd,2,0.9617369
+Torres,Luton,0,0.96148634
+Berry,Aston Villa,0,0.9613966
+Broja,Brighton,1,0.9611637
+Roerslev Rasmussen,Chelsea,10,0.96000105
+Billing,Burnley,1,0.9592304
+Kulusevski,Crystal Palace,2,0.9583958
+Chilwell,Brentford,1,0.9579212
+Davies,Arsenal,1,0.95747936
+Webster,Fulham,1,0.95730335
+McConnell,Nott'm Forest,0,0.9560583
+Reyna,Liverpool,0,0.9555647
+Roberts,Bournemouth,0,0.95549643
+Walker,Man Utd,2,0.9551673
+Eriksen,Man City,0,0.95511174
+Fraser,Newcastle,1,0.9549542
+Álvarez,Man Utd,4,0.95416987
+Patterson,West Ham,0,0.9537667
+Gilchrist,Brentford,0,0.952117
+Veiga de Carvalho e Silva,Man Utd,3,0.95211583
+Endo,Nott'm Forest,1,0.95132726
+Young,West Ham,0,0.95098215
+Krafth,Wolves,0,0.9503997
+Véliz,Crystal Palace,0,0.95016676
+de Santiago Alonso,Crystal Palace,0,0.95016676
+Solomon,Crystal Palace,0,0.95016676
+Perišić,Crystal Palace,0,0.95016676
+Ndombélé Alvaro,Crystal Palace,0,0.95016676
+Kane,Crystal Palace,0,0.95016676
+Dier,Crystal Palace,0,0.95016676
+Phillips,Crystal Palace,0,0.95016676
+Sessegnon,Crystal Palace,0,0.95016676
+Tanganga,Crystal Palace,0,0.95016676
+Sánchez,Crystal Palace,0,0.95016676
+Scarlett,Crystal Palace,1,0.95016676
+Dorrington,Crystal Palace,0,0.95016676
+Spence,Crystal Palace,0,0.95016676
+Rodon,Crystal Palace,0,0.95016676
+Norrington-Davies,Arsenal,0,0.94978225
+Colwill,Brentford,1,0.9497398
+Onana,West Ham,2,0.94972664
+Antonio,Everton,0,0.9497258
+Sambi Lokonga,Aston Villa,0,0.9497158
+Ahmedhodžić,Arsenal,-1,0.94963676
+Tete,Brighton,0,0.9494614
+Omobamidele,Liverpool,2,0.948201
+Susoho,Man Utd,0,0.94815993
+Hamilton,Man Utd,0,0.94815993
+Perrone,Man Utd,0,0.94815993
+Cancelo,Man Utd,0,0.94815993
+Charles,Man Utd,0,0.94815993
+Laporte,Man Utd,0,0.94815993
+Mahrez,Man Utd,0,0.94815993
+McNeil,West Ham,2,0.9478713
+Branthwaite,West Ham,1,0.9478713
+Onyeka,Chelsea,4,0.9474007
+Enciso,Fulham,1,0.9461189
+Isak,Wolves,8,0.9459683
+Gvardiol,Man Utd,0,0.9455308
+Bassey,Brighton,6,0.9453437
+Iwobi,Brighton,3,0.9453437
+Ghoddos,Chelsea,0,0.94458085
+Phillips,Everton,1,0.94423443
+Nørgaard,Chelsea,2,0.94388914
+Reguilón,Chelsea,4,0.94388914
+Toney,Chelsea,2,0.94388914
+Mavropanos,Everton,2,0.94381726
+Wilson,Wolves,0,0.94371253
+Doku,Man Utd,1,0.94322294
+Wood,Liverpool,0,0.9425072
+Brooks,Arsenal,1,0.93979204
+Bogle,Arsenal,-4,0.9385534
+Norwood,Arsenal,1,0.9385534
+de Andrade,Crystal Palace,0,0.9382195
+Chong,Aston Villa,7,0.93780476
+Iroegbunam,Luton,1,0.9374648
+Cornet,Everton,0,0.9371746
+Mrozek,Nott'm Forest,0,0.9370409
+Tielemans,Luton,2,0.9368549
+Skipp,Crystal Palace,0,0.9365247
+Karius,Wolves,0,0.9364565
+Alcántara do Nascimento,Nott'm Forest,0,0.93592834
+Mac Allister,Nott'm Forest,6,0.9354401
+Díaz,Nott'm Forest,3,0.9354401
+Elliott,Nott'm Forest,3,0.9354401
+Gakpo,Nott'm Forest,2,0.9354401
+Mpanzu,Aston Villa,1,0.9354134
+Estupiñán,Fulham,0,0.9351695
+dos Santos de Paulo,Fulham,0,0.9351695
+Rogers,Luton,0,0.9345166
+Doughty,Aston Villa,5,0.93383896
+Larouci,Arsenal,0,0.93365365
+Robertson,Nott'm Forest,0,0.93333805
+Aguerd,Everton,0,0.9331546
+Maupay,Chelsea,1,0.9330381
+Borges da Silva,Brighton,1,0.9329856
+Ramalho Chermiti,West Ham,1,0.932689
+dos Santos,Man City,1,0.9326423
+Harrison,West Ham,2,0.9323681
+Lewis,Man Utd,0,0.9316023
+Slimane,Arsenal,0,0.9310798
+Romero,Crystal Palace,10,0.9310146
+van de Ven,Crystal Palace,2,0.9310146
+Hall,Wolves,0,0.9308282
+Hayden,Wolves,0,0.9308282
+Kuol,Wolves,0,0.9308282
+Diallo,Wolves,0,0.9308282
+Dummett,Wolves,0,0.9308282
+Parkinson,Wolves,0,0.9308282
+Apolinário de Lira,Wolves,0,0.9308282
+Hendrick,Wolves,0,0.9308282
+Lewis,Wolves,0,0.9308282
+Manquillo Gaitán,Wolves,0,0.9308282
+Saint-Maximin,Wolves,0,0.9308282
+Fraser,Wolves,0,0.9308282
+Ashby,Wolves,0,0.9308282
+Anderson,Wolves,1,0.9308282
+Murphy,Wolves,0,0.9308282
+Hernes,Wolves,0,0.9308282
+Ndiweni,Wolves,0,0.9308282
+Targett,Wolves,0,0.9308282
+Tonali,Wolves,0,0.9308282
+Watts,Wolves,0,0.9308282
+Diop,Brighton,0,0.93080527
+Tomkins,Spurs,0,0.92969054
+Marsh,Arsenal,0,0.9295695
+Hackford,Arsenal,0,0.9295695
+Basham,Arsenal,0,0.9295695
+Seriki,Arsenal,0,0.9295695
+Peck,Arsenal,0,0.9295695
+Jebbison,Arsenal,0,0.9295695
+Fleck,Arsenal,0,0.9295695
+Traoré,Arsenal,0,0.9295695
+Coulibaly,Arsenal,0,0.9295695
+Baldock,Arsenal,1,0.9295695
+Thomas,Arsenal,0,0.9295695
+Ndiaye,Arsenal,0,0.9295695
+Egan,Arsenal,0,0.9295695
+Oné,Arsenal,0,0.9295695
+Buyabu,Arsenal,0,0.9295695
+Cresswell,Everton,0,0.9287009
+Brown,Aston Villa,0,0.92838967
+Janelt,Chelsea,1,0.927918
+McGinn,Luton,2,0.9274372
+Gravenberch,Nott'm Forest,0,0.9273939
+Livramento,Wolves,7,0.9273102
+Botman,Wolves,6,0.9273102
+Pinnock,Chelsea,0,0.9271312
+Damsgaard,Chelsea,0,0.9271312
+Hunt,West Ham,0,0.9267732
+Cannon,West Ham,0,0.9267732
+Gbamin,West Ham,0,0.9267732
+Gray,West Ham,0,0.9267732
+Tavares Gomes,West Ham,1,0.9267732
+Alli,West Ham,0,0.9267732
+Onyango,West Ham,0,0.9267732
+Simms,West Ham,0,0.9267732
+Keane,West Ham,0,0.9267732
+Campbell,West Ham,0,0.9267732
+Metcalfe,West Ham,0,0.9267732
+Diallo,Man City,0,0.92656654
+Dragusin,Crystal Palace,0,0.92622197
+Domínguez,Liverpool,3,0.92590404
+Gibbs-White,Liverpool,1,0.92590404
+Elanga,Liverpool,2,0.92590404
+Hudson-Odoi,Liverpool,2,0.92590404
+Awoniyi,Liverpool,1,0.92590404
+De Bruyne,Man Utd,2,0.924735
+Francois,Brighton,0,0.92349935
+Sekularac,Brighton,0,0.92349935
+Stansfield,Brighton,0,0.92349935
+Dibley-Dias,Brighton,0,0.92349935
+Neves Abreu Cavaleiro,Brighton,0,0.92349935
+De Fougerolles,Brighton,0,0.92349935
+Knockaert,Brighton,0,0.92349935
+Kongolo,Brighton,0,0.92349935
+Alves Morais,Brighton,0,0.92349935
+Harris,Brighton,0,0.92349935
+Mbabu,Brighton,0,0.92349935
+Mitrović,Brighton,0,0.92349935
+Tanton,Brighton,0,0.92349935
+Teixeira da Silva,Nott'm Forest,0,0.9230884
+Zaroury,Bournemouth,0,0.9227078
+Trusty,Arsenal,-1,0.92132217
+Elneny,Sheffield Utd,0,0.921308
+Madueke,Brentford,0,0.9204551
+Maddison,Crystal Palace,5,0.92029595
+dos Santos Magalhães,Sheffield Utd,6,0.9199703
+Rice,Sheffield Utd,8,0.9199703
+White,Sheffield Utd,13,0.9199703
+Havertz,Sheffield Utd,14,0.9199703
+Kiwior,Sheffield Utd,10,0.9199703
+Saliba,Sheffield Utd,6,0.9199703
+Saka,Sheffield Utd,7,0.9199703
+Ødegaard,Sheffield Utd,10,0.9199703
+Trossard,Sheffield Utd,1,0.9199703
+Fredrick,Chelsea,0,0.9188582
+Mbeumo,Chelsea,0,0.9188582
+Peart-Harris,Chelsea,0,0.9188582
+Hickey,Chelsea,0,0.9188582
+Olakigbe,Chelsea,0,0.9188582
+Bidstrup,Chelsea,0,0.9188582
+Canós Tenés,Chelsea,0,0.9188582
+Schade,Chelsea,0,0.9188582
+Trevitt,Chelsea,0,0.9188582
+Kim,Chelsea,0,0.9188582
+Dervişoğlu,Chelsea,0,0.9188582
+Goode,Chelsea,0,0.9188582
+Adedokun,Chelsea,0,0.9188582
+Henry,Chelsea,0,0.9188582
+Brierley,Chelsea,0,0.9188582
+Bech Sørensen,Chelsea,0,0.9188582
+Nelson,Sheffield Utd,0,0.9188376
+Baptiste,Chelsea,0,0.9180143
+Núñez Ribeiro,Nott'm Forest,5,0.9172748
+Udogie,Crystal Palace,2,0.9168432
+Traoré,Newcastle,1,0.91666657
+Calvert-Lewin,West Ham,1,0.9137123
+Ogbene,Aston Villa,2,0.91355705
+Morris,Aston Villa,8,0.91355705
+Sels,Liverpool,2,0.9134574
+Bailey,Luton,4,0.91340995
+Soares de Paulo,Luton,4,0.91340995
+Watkins,Luton,13,0.91340995
+Evans,Man City,2,0.91286296
+Lindelöf,Man City,1,0.91286296
+Guimarães Rodriguez Moura,Wolves,6,0.9126251
+Gusto,Brentford,5,0.91080356
+Mitoma,Fulham,0,0.9106388
+van Dijk,Nott'm Forest,6,0.91050065
+Senesi,Burnley,1,0.9088558
+Robinson,Brighton,6,0.9071451
+Martinelli Silva,Sheffield Utd,11,0.9049596
+Bruun Larsen,Bournemouth,2,0.9048669
+Almirón Rejala,Wolves,1,0.9047804
+Baker-Boaitey,Fulham,0,0.9046748
+Dräger,Liverpool,0,0.9043165
+Dennis,Liverpool,0,0.9043165
+Cook,Liverpool,0,0.9043165
+McDonnell,Liverpool,0,0.9043165
+Bowler,Liverpool,0,0.9043165
+Boly,Liverpool,0,0.9043165
+Osong,Liverpool,0,0.9043165
+Gardner,Liverpool,0,0.9043165
+Biancone,Liverpool,0,0.9043165
+Aurier,Liverpool,0,0.9043165
+Arter,Liverpool,0,0.9043165
+Worrall,Liverpool,0,0.9043165
+Aguilera Zamora,Liverpool,0,0.9043165
+Shelvey,Liverpool,0,0.9043165
+Furtado Scarpa,Liverpool,0,0.9043165
+Ui-jo,Liverpool,0,0.9043165
+Laryea,Liverpool,0,0.9043165
+Mbe Soh,Liverpool,0,0.9043165
+Surridge,Liverpool,0,0.9043165
+McKenna,Liverpool,0,0.9043165
+Sangaré,Liverpool,0,0.9043165
+Mighten,Liverpool,0,0.9043165
+Powell,Liverpool,0,0.9043165
+O'Brien,Liverpool,0,0.9043165
+Ojeda Rodríguez,Liverpool,0,0.9043165
+Panzo,Liverpool,0,0.9043165
+Richards,Liverpool,0,0.9043165
+Kouyaté,Liverpool,0,0.9043165
+Freuler,Liverpool,0,0.9043165
+Aina,Liverpool,0,0.9043165
+De Cordova-Reid,Brighton,3,0.90356743
+Muniz Carvalho,Brighton,11,0.90356743
+Gomez,Nott'm Forest,6,0.9027882
+Ortega Moreno,Man Utd,0,0.9018152
+Steffen,Man Utd,0,0.9018152
+Carson,Man Utd,0,0.9018152
+Cullen,Bournemouth,2,0.9005793
+Woodrow,Aston Villa,0,0.90016645
+Sterling,Brentford,1,0.8993745
+Beyer,Bournemouth,0,0.8964492
+Bastien,Bournemouth,0,0.8964492
+Redmond,Bournemouth,0,0.8964492
+Obafemi,Bournemouth,0,0.8964492
+Churlinov,Bournemouth,0,0.8964492
+Costelloe,Bournemouth,0,0.8964492
+McNally,Bournemouth,0,0.8964492
+Egan-Riley,Bournemouth,0,0.8964492
+Thomas,Bournemouth,0,0.8964492
+Agyei,Bournemouth,0,0.8964492
+Koleosho,Bournemouth,0,0.8964492
+Dodgson,Bournemouth,0,0.8964492
+Weghorst,Bournemouth,0,0.8964492
+Trésor,Bournemouth,0,0.8964492
+Twine,Bournemouth,0,0.8964492
+Gordon,Wolves,8,0.89639187
+Schär,Wolves,12,0.89639187
+Dobbin,West Ham,1,0.8939453
+Townsend,Aston Villa,1,0.8939216
+Davies,Arsenal,0,0.89289963
+Amissah,Arsenal,0,0.89289963
+Castagne,Brighton,6,0.89225245
+Osho,Aston Villa,0,0.8922111
+McAtee,Aston Villa,0,0.89188933
+Francis-Clarke,Aston Villa,0,0.89188933
+Luker,Aston Villa,0,0.89188933
+Nelson,Aston Villa,0,0.89188933
+Johnson,Aston Villa,0,0.89188933
+Kaboré,Aston Villa,1,0.89188933
+Mendes Gomes,Aston Villa,0,0.89188933
+Nakamba,Aston Villa,0,0.89188933
+Giles,Aston Villa,0,0.89188933
+Muskwe,Aston Villa,0,0.89188933
+Onyedinma,Aston Villa,0,0.89188933
+Pepple,Aston Villa,0,0.89188933
+Pereira,Aston Villa,0,0.89188933
+Potts,Aston Villa,0,0.89188933
+Rea,Aston Villa,0,0.89188933
+Thorpe,Aston Villa,0,0.89188933
+Watson,Aston Villa,0,0.89188933
+Lockyer,Aston Villa,0,0.89188933
+Campbell,Aston Villa,0,0.89188933
+Andersen,Aston Villa,0,0.89188933
+Taylor,Aston Villa,0,0.89188933
+Freeman,Aston Villa,0,0.89188933
+Bradley,Nott'm Forest,8,0.8904797
+Moreno Lopera,Luton,1,0.88991296
+Montiel,Liverpool,0,0.88880914
+Gallagher,Brentford,1,0.8886976
+Varela Tavares,Liverpool,0,0.88759756
+de Almeida Monteiro,Liverpool,-1,0.8864299
+Digne,Luton,7,0.8847874
+Foster,Bournemouth,0,0.88396466
+Ajer,Chelsea,1,0.8829285
+Badiashile,Brentford,0,0.8795514
+Collins,Chelsea,1,0.8786972
+Mee,Chelsea,0,0.8786972
+de Souza Costa,Arsenal,2,0.8778236
+Lamptey,Fulham,0,0.87765306
+Santiago Costa dos Santos,Liverpool,2,0.8771693
+dos Santos de Oliveira,Liverpool,0,0.8771693
+Williams,Liverpool,2,0.8771693
+Whiteman,Crystal Palace,0,0.8752832
+Forster,Crystal Palace,0,0.8752832
+Lloris,Crystal Palace,0,0.8752832
+Austin,Crystal Palace,0,0.8752832
+Konsa Ngoyo,Luton,1,0.8747976
+Bentancur,Crystal Palace,1,0.8727728
+Gueye,West Ham,0,0.87257355
+Cairney,Brighton,1,0.8725732
+Heung-min,Crystal Palace,7,0.8720041
+Moder,Fulham,1,0.8709857
+Baleba,Fulham,1,0.8709857
+Godfrey,West Ham,1,0.87061185
+Alves Soares,Sheffield Utd,1,0.86964375
+Ünal,Burnley,1,0.8694792
+Barkley,Aston Villa,2,0.86905724
+Chalobah,Brentford,1,0.8686681
+Palmer,Brentford,5,0.86865866
+Trippier,Wolves,1,0.867715
+Højbjerg,Crystal Palace,1,0.86731875
+Bowen,Everton,5,0.86667544
+Nunes,Man Utd,0,0.8661889
+Ekdal,Bournemouth,0,0.8648702
+Kovačić,Man Utd,0,0.8619067
+Vicario,Crystal Palace,2,0.861398
+Adarabioyo,Brighton,6,0.8598247
+Johnson,Everton,1,0.85969394
+Zouma,Everton,8,0.85969394
+Fernández,Brentford,2,0.8593578
+Lowe,Arsenal,0,0.85928816
+Chukwuemeka,Brentford,0,0.8581215
+McAtee,Arsenal,1,0.8561437
+Lallana,Fulham,1,0.8556385
+Milner,Fulham,0,0.8547686
+Osborn,Arsenal,2,0.85430956
+Brownhill,Bournemouth,0,0.851857
+Ward,Spurs,1,0.85123134
+Souček,Everton,7,0.84993905
+Garner,West Ham,5,0.8483534
+Ings,Everton,0,0.84706676
+Adingra,Fulham,1,0.8466393
+Groß,Fulham,1,0.8466393
+Welbeck,Fulham,0,0.8466393
+Dunk,Fulham,0,0.8466393
+Palmieri dos Santos,Everton,2,0.8463912
+Longstaff,Wolves,3,0.84504694
+Ozoh,Spurs,0,0.8435455
+Adebayo,Aston Villa,0,0.84226954
+Mudryk,Brentford,1,0.8412778
+Borges Fernandes,Man City,5,0.839845
+McTominay,Man City,2,0.839845
+Wissa,Chelsea,6,0.83838826
+Murphy,Wolves,3,0.83821917
+Kudus,Everton,5,0.83815354
+Faivre,Burnley,0,0.8374716
+Muñoz,Spurs,1,0.83604074
+Miley,Wolves,1,0.8343929
+Wilson,Brighton,14,0.8343447
+Lukić,Brighton,3,0.8343447
+Andersen,Spurs,1,0.8335637
+O'Shea,Bournemouth,0,0.8325581
+Pope,Wolves,0,0.8320221
+Darlow,Wolves,0,0.8320221
+Gillespie,Wolves,0,0.8320221
+Garnacho,Man City,2,0.82833457
+Henderson,Spurs,0,0.8282209
+Santos Silva,Luton,0,0.82721657
+Solanke,Burnley,2,0.8269286
+Grbic,Arsenal,0,0.82668775
+Jensen,Chelsea,1,0.8257936
+Neves Virgínia,West Ham,0,0.82327473
+Lonergan,West Ham,0,0.82327473
+Casadei,Brentford,0,0.8229358
+Cash,Luton,1,0.8221838
+Santana de Moraes,Man Utd,2,0.8218173
+Caicedo Corozo,Brentford,2,0.821409
+Buonanotte,Fulham,1,0.82055706
+Mangala,Liverpool,0,0.8202117
+Rodriguez,Bournemouth,1,0.8199814
+Werner,Crystal Palace,9,0.8188969
+Hoelgebaum Pereira,Brighton,3,0.8188352
+Berge,Bournemouth,2,0.8180702
+Zaniolo,Luton,0,0.817345
+Ayew,Spurs,3,0.8173225
+Mateta,Spurs,2,0.8173225
+Richards,Spurs,1,0.8173225
+Benda,Brighton,0,0.8162907
+Rodák,Brighton,0,0.8162907
+Steele,Fulham,1,0.8129818
+Mitchell,Spurs,1,0.8121468
+Kelleher,Nott'm Forest,9,0.8105173
+Veltman,Fulham,1,0.80827135
+Angelini,Chelsea,0,0.8065081
+Strakosha,Chelsea,0,0.8065081
+Balcombe,Chelsea,0,0.8065081
+Valdimarsson,Chelsea,0,0.8065081
+Cox,Chelsea,0,0.8065081
+Cook,Burnley,12,0.8063178
+Burke,Aston Villa,3,0.80593985
+Højlund,Man City,0,0.7992959
+Maguire,Man City,0,0.7992959
+Cabral Semedo,Newcastle,1,0.79820555
+Ward-Prowse,Everton,5,0.79774266
+Ouattara,Burnley,1,0.7966145
+McBurnie,Arsenal,1,0.79643565
+Ream,Brighton,0,0.7961875
+Niakhaté,Liverpool,0,0.79396826
+França de Oliveira,Spurs,1,0.7939316
+Archer,Arsenal,0,0.79327184
+Nketiah,Sheffield Utd,0,0.79252136
+Odobert,Bournemouth,2,0.79147035
+Álvarez Velázquez,Everton,9,0.78923076
+Szoboszlai,Nott'm Forest,1,0.78649503
+Semenyo,Burnley,7,0.7852409
+Turner,Liverpool,0,0.7838597
+Guéhi,Spurs,0,0.7828185
+Palhinha Gonçalves,Brighton,0,0.78232753
+Jones,Nott'm Forest,0,0.7822043
+Pickford,West Ham,0,0.78037006
+Zinchenko,Sheffield Utd,0,0.7779093
+Vlachodimos,Liverpool,0,0.7767244
+Hennessey,Liverpool,0,0.7767244
+Shelvey,Liverpool,0,0.7767244
+Horvath,Liverpool,0,0.7767244
+Ahamada,Spurs,0,0.7756004
+Traoré,Brighton,6,0.7749004
+Lerma Solís,Spurs,1,0.7739535
+Kamara,Luton,0,0.7722102
+Dalot Teixeira,Man City,1,0.76737416
+Alexander-Arnold,Nott'm Forest,0,0.76725805
+Gudmundsson,Bournemouth,1,0.7663778
+Doucouré,West Ham,2,0.7626443
+Franchi,Bournemouth,0,0.7611374
+Muric,Bournemouth,0,0.7611374
+Peacock-Farrell,Bournemouth,0,0.7611374
+Vigouroux,Bournemouth,0,0.7611374
+Kilman,Newcastle,1,0.760569
+Aït-Nouri,Newcastle,0,0.75567955
+Sarabia,Newcastle,2,0.75567955
+Gomes da Silva,Newcastle,0,0.75567955
+Krul,Aston Villa,0,0.7522657
+Walton,Aston Villa,0,0.7522657
+Macey,Aston Villa,0,0.7522657
+Shea,Aston Villa,0,0.7522657
+Beck,Nott'm Forest,0,0.7492685
+Tavares,Nott'm Forest,0,0.7492685
+Doak,Nott'm Forest,0,0.7492685
+Henderson,Nott'm Forest,0,0.7492685
+Matip,Nott'm Forest,0,0.7492685
+Phillips,Nott'm Forest,0,0.7492685
+van den Berg,Nott'm Forest,0,0.7492685
+Chambers,Nott'm Forest,0,0.7492685
+Scanlon,Nott'm Forest,0,0.7492685
+Bajcetic,Nott'm Forest,0,0.7492685
+Gordon,Nott'm Forest,0,0.7492685
+Nyoni,Nott'm Forest,0,0.7492685
+Osula,Arsenal,1,0.74742717
+Origi,Liverpool,2,0.73877364
+Frello Filho,Sheffield Utd,3,0.7371582
+Lewis-Skelly,Sheffield Utd,0,0.73514557
+Ibrahim,Sheffield Utd,0,0.73514557
+Walters,Sheffield Utd,0,0.73514557
+Timber,Sheffield Utd,0,0.73514557
+Sagoe,Sheffield Utd,0,0.73514557
+Balogun,Sheffield Utd,0,0.73514557
+Tierney,Sheffield Utd,0,0.73514557
+Xhaka,Sheffield Utd,0,0.73514557
+Pépé,Sheffield Utd,0,0.73514557
+Partey,Sheffield Utd,1,0.73514557
+Oliveira Alencar,Sheffield Utd,0,0.73514557
+Ferreira Vieira,Sheffield Utd,1,0.73514557
+Tomiyasu,Sheffield Utd,0,0.73514557
+van Hecke,Fulham,1,0.7342256
+Tavernier,Burnley,2,0.73206717
+Barco,Fulham,0,0.73159635
+Burn,Wolves,8,0.730376
+Diaby,Luton,4,0.72759205
+Schlupp,Spurs,0,0.72444725
+Emiliano da Silva,Brentford,0,0.72328454
+Tolentino Coelho de Lima,Everton,2,0.72296643
+Bell,Aston Villa,1,0.72239804
+Wharton,Spurs,3,0.7207829
+Amrabat,Man City,1,0.7207637
+Kelly,Burnley,0,0.72012144
+Lomba Neto,Newcastle,1,0.71925724
+Coutinho Correia,Luton,0,0.7145014
+Buendía Stati,Luton,0,0.7145014
+Kesler-Hayden,Luton,0,0.7145014
+Hause,Luton,0,0.7145014
+Mings,Luton,0,0.7145014
+Kellyman,Luton,0,0.7145014
+Philogene-Bidace,Luton,0,0.7145014
+Davis,Luton,0,0.7145014
+Dendoncker,Luton,0,0.7145014
+Moraes Ferreira da Silva,Luton,0,0.7145014
+Sanson,Luton,0,0.7145014
+Durán,Luton,0,0.7145014
+O'Reilly,Luton,0,0.7145014
+Traoré,Luton,0,0.7145014
+da Silva,Bournemouth,1,0.7085951
+Piesold,Aston Villa,0,0.70474607
+Smith Rowe,Sheffield Utd,0,0.704216
+Sarmiento Morante,Fulham,0,0.7042096
+Ayari,Fulham,0,0.7042096
+Undav,Fulham,0,0.7042096
+Dahoud,Fulham,0,0.7042096
+Duffus,Fulham,0,0.7042096
+March,Fulham,0,0.7042096
+Jackson,Fulham,0,0.7042096
+O’Mahony,Fulham,0,0.7042096
+Barrington,Fulham,0,0.7042096
+Karbownik,Fulham,0,0.7042096
+Kozłowski,Fulham,0,0.7042096
+Peupion,Fulham,0,0.7042096
+Zeqiri,Fulham,0,0.7042096
+Connolly,Fulham,0,0.7042096
+Alzate,Fulham,0,0.7042096
+Kavanagh,Fulham,0,0.7042096
+Lenglet,Luton,1,0.70393836
+Dawson,Newcastle,1,0.702994
+Casimiro,Man City,2,0.7020987
+Sweet,Sheffield Utd,0,0.695957
+Flekken,Chelsea,2,0.6934882
+Sinisterra,Burnley,0,0.6925106
+Danns,Nott'm Forest,0,0.6915513
+Ritchie,Wolves,0,0.68732893
+Willock,Wolves,3,0.68732893
+Mainoo,Man City,2,0.6766039
+Lowe,Burnley,0,0.6732578
+Anthony,Burnley,0,0.6732578
+Dembélé,Burnley,0,0.6732578
+Brooks,Burnley,0,0.6732578
+Adams,Burnley,0,0.6732578
+Mepham,Burnley,6,0.6732578
+Marcondes,Burnley,0,0.6732578
+Hill,Burnley,0,0.6732578
+Fredericks,Burnley,0,0.6732578
+Kilkenny,Burnley,0,0.6732578
+Aarons,Burnley,0,0.6732578
+Moore,Burnley,0,0.6732578
+Rothwell,Burnley,0,0.6732578
+Kinsey,Burnley,0,0.6732578
+Traorè,Burnley,0,0.6732578
+Greenwood,Burnley,0,0.6732578
+Pearson,Burnley,0,0.6732578
+Clark,Aston Villa,2,0.66956073
+Doherty,Newcastle,0,0.6672587
+Yates,Liverpool,2,0.6650942
+Lavia,Brentford,0,0.6626346
+Stutter,Brentford,0,0.6626346
+Humphreys,Brentford,0,0.6626346
+Ampadu,Brentford,0,0.6626346
+Matos,Brentford,0,0.6626346
+Nascimento dos Santos,Brentford,0,0.6626346
+Aubameyang,Brentford,0,0.6626346
+Azpilicueta,Brentford,0,0.6626346
+Sarr,Brentford,0,0.6626346
+Baba,Brentford,0,0.6626346
+Pulisic,Brentford,0,0.6626346
+Cucurella Saseta,Brentford,0,0.6626346
+de Souza Eugênio,Brentford,0,0.6626346
+Fofana,Brentford,0,0.6626346
+James,Brentford,0,0.6626346
+Lukaku Bolingoli,Brentford,0,0.6626346
+da Silva Moreira,Brentford,0,0.6626346
+Ziyech,Brentford,0,0.6626346
+Brooking,Brentford,0,0.6626346
+Maatsen,Brentford,0,0.6626346
+Borges Damaceno,Brentford,0,0.6626346
+Ugochukwu,Brentford,0,0.6626346
+Burstow,Brentford,0,0.6626346
+Castledine,Brentford,0,0.6626346
+Kerkez,Burnley,6,0.6607357
+Rashford,Man City,7,0.6572456
+Curtis,Arsenal,0,0.6474547
+Sasnauskas,Arsenal,0,0.6474547
+Arblaster,Arsenal,1,0.6474547
+Blacker,Arsenal,0,0.6474547
+Fernando de Jesus,Sheffield Utd,1,0.64144856
+Hinshelwood,Fulham,0,0.6374838
+Harrison,Brentford,0,0.63057506
+Tauriainen,Brentford,0,0.63057506
+Samuels-Smith,Brentford,0,0.63057506
+Bueno López,Newcastle,1,0.6290566
+Earthy,Everton,0,0.6278784
+Ramsey,Bournemouth,0,0.62510943
+Ramses Becker,Nott'm Forest,0,0.62314343
+Hamer,Arsenal,2,0.6187482
+Nkunku,Brentford,0,0.61874014
+Coufal,Everton,2,0.6119353
+Raya Martin,Sheffield Utd,6,0.61129427
+Reed,Brighton,3,0.60966426
+Gomes,Newcastle,0,0.60750157
+Foderingham,Arsenal,0,0.6067326
+Brereton,Arsenal,0,0.5993686
+Hughes,Spurs,1,0.5898013
+Doyle,Newcastle,2,0.58928865
+Fati Vieira,Fulham,1,0.5890591
+Christie,Burnley,1,0.5881834
+Murara Neto,Burnley,8,0.582134
+Okoduwa,Newcastle,0,0.5769932
+Martínez,Man City,0,0.5761947
+Barnes,Wolves,1,0.5753614
+Kaminski,Aston Villa,2,0.5725551
+Ferguson,Fulham,2,0.570021
+Kluivert,Burnley,7,0.5668407
+Gauci,Luton,0,0.5661584
+Amdouni,Bournemouth,1,0.5615592
+Gilmour,Fulham,0,0.5599517
+Varane,Man City,0,0.5451469
+Shaw,Man City,0,0.5441503
+Al-Dakhil,Bournemouth,0,0.54101485
+Scott,Burnley,1,0.53431314
+Zabarnyi,Burnley,6,0.5241058
+Smith,Burnley,5,0.5241058
+Santos Carneiro Da Cunha,Newcastle,0,0.5215186
+Fabianski,Everton,0,0.5177551
+Edouard,Spurs,1,0.5139317
+Chirewa,Newcastle,1,0.5079004
+Hesketh,Newcastle,0,0.5079004
+Barnett,Newcastle,0,0.5079004
+Hubner,Newcastle,0,0.5079004
+Whittingham,Newcastle,0,0.5079004
+Lemina,Newcastle,0,0.5079004
+Griffiths,Newcastle,0,0.5079004
+Mosquera,Newcastle,0,0.5079004
+Cavaco Jordão,Newcastle,0,0.5079004
+González,Newcastle,0,0.5079004
+Silva,Newcastle,0,0.5079004
+Hoever,Newcastle,0,0.5079004
+Tomás Oliveira,Newcastle,0,0.5079004
+Cundle,Newcastle,0,0.5079004
+Ganchinho Guedes,Newcastle,0,0.5079004
+Hodge,Newcastle,0,0.5079004
+Kalajdzic,Newcastle,0,0.5079004
+Bueno,Newcastle,0,0.5079004
+Castelo Podence,Newcastle,0,0.5079004
+Castro Otto,Newcastle,0,0.5079004
+Bolla,Newcastle,0,0.5079004
+Forson,Man City,1,0.4939379
+Doucouré,Spurs,0,0.49376035
+Plange,Spurs,0,0.49376035
+Rak-Sakyi,Spurs,0,0.49376035
+Clyne,Spurs,0,0.49376035
+Gordon,Spurs,0,0.49376035
+O'Brien,Spurs,0,0.49376035
+Adaramola,Spurs,0,0.49376035
+Ebiowei,Spurs,0,0.49376035
+Raymond,Spurs,0,0.49376035
+Holding,Spurs,0,0.49376035
+Riedewald,Spurs,0,0.49376035
+Ola-Adebomi,Spurs,0,0.49376035
+Coventry,Everton,0,0.4925683
+Orford,Everton,0,0.4925683
+Casey,Everton,0,0.4925683
+Marshall,Everton,0,0.4925683
+Scarles,Everton,0,0.4925683
+Benrahma,Everton,0,0.4925683
+Fornals Malla,Everton,0,0.4925683
+Kehrer,Everton,0,0.4925683
+Mubama,Everton,0,0.4925683
+Scamacca,Everton,0,0.4925683
+Vlašić,Everton,0,0.4925683
+Downes,Everton,0,0.4925683
+Ogbonna,Everton,1,0.4925683
+Fofana,Bournemouth,2,0.48406678
+Rodney,Spurs,0,0.48380363
+Umeh-Chibueze,Spurs,0,0.48380363
+Lemina,Newcastle,2,0.47807294
+Junqueira de Jesus,Fulham,0,0.47662616
+de Araújo Pitaluga Filho,Nott'm Forest,0,0.4758712
+San Miguel del Castillo,Nott'm Forest,0,0.4758712
+Rodrigues de Paula Santos,Man City,0,0.46787485
+Mejbri,Man City,0,0.46787485
+Martial,Man City,0,0.46787485
+Malacia,Man City,0,0.46787485
+Pellistri Rebollo,Man City,0,0.46787485
+Sancho,Man City,0,0.46787485
+Shoretire,Man City,0,0.46787485
+Bailly,Man City,0,0.46787485
+van de Beek,Man City,0,0.46787485
+Wan-Bissaka,Man City,0,0.46787485
+Fernández Carreras,Man City,0,0.46787485
+Williams,Man City,0,0.46787485
+Gore,Man City,0,0.46787485
+Telles,Man City,0,0.46787485
+Mount,Man City,0,0.46787485
+Bennett,Man City,0,0.46787485
+Kambwala,Man City,0,0.46787485
+Hugill,Man City,0,0.46787485
+Hein,Sheffield Utd,0,0.45749858
+Rúnarsson,Sheffield Utd,0,0.45749858
+Ramsdale,Sheffield Utd,0,0.45749858
+Onana,Man City,2,0.45720774
+Trafford,Bournemouth,1,0.44844323
+Petrović,Brentford,2,0.44466043
+Leno,Brighton,8,0.4407628
+Wright,Luton,0,0.43193585
+Marschall,Luton,0,0.43193585
+Zych,Luton,0,0.43193585
+Proctor,Luton,0,0.43193585
+Sinisalo,Luton,0,0.43193585
+Olsen,Luton,0,0.43193585
+Collyer,Man City,0,0.4271159
+Ogunneye,Man City,0,0.4271159
+Bellegarde,Newcastle,2,0.42619094
+McGill,Fulham,0,0.4197306
+Scherpen,Fulham,0,0.4197306
+Martínez Romero,Luton,1,0.40973788
+Areola,Everton,13,0.4093417
+Johnstone,Spurs,1,0.3999439
+Olise,Spurs,0,0.39940342
+Travers,Burnley,0,0.38500738
+Randolph,Burnley,0,0.38500738
+Radu,Burnley,0,0.38500738
+Bergström,Brentford,0,0.3737301
+Słonina,Brentford,0,0.3737301
+Beach,Brentford,0,0.3737301
+Sánchez,Brentford,0,0.3737301
+Arrizabalaga,Brentford,0,0.3737301
+Bettinelli,Brentford,0,0.3737301
+Eze,Spurs,8,0.36048567
+Dubravka,Wolves,7,0.34187302
+Jackson,Brentford,6,0.28471914
+Heaton,Man City,0,0.2671111
+Vítek,Man City,0,0.2671111
+Bayindir,Man City,0,0.2671111
+Hee-chan,Newcastle,0,0.25386736
+Verbruggen,Fulham,0,0.24952324
+Šarkić,Newcastle,0,0.23872165
+King,Newcastle,0,0.23872165
+Bentley,Newcastle,1,0.23872165
+Malheiro de Sá,Newcastle,0,0.2367591
+Matthews,Spurs,0,0.2285944
+Whitworth,Spurs,0,0.2285944
+Guaita,Spurs,0,0.2285944
+Anang,Everton,0,0.22775455

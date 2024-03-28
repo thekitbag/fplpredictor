@@ -32,6 +32,8 @@ def train_XGBoost_classifier_model(training_data_csv):
     
     print('Training Model')
     model.fit(training_data['features'], training_data['target'])
+    feature_names = model.get_booster().feature_names
+    print(feature_names)
 
     return {'model': model, 'original_column_names': training_data['column_names']}
 
@@ -116,6 +118,7 @@ def test_model(trained_model, testing_data_csv):
     f1 = f1_score(test_data['target'], predictions)
 
     importance_dict = model.get_booster().get_score(importance_type='gain')
+
     for i in importance_dict:
         print(i, importance_dict[i])
     
@@ -125,9 +128,11 @@ def test_model(trained_model, testing_data_csv):
 
     return None
 
-
-
-#trained_model = train_XGBoost_classifier_model('./processed_data/training_data.csv')
-#save_model(trained_model['model'], trained_model['original_column_names'])
-#tune_XGBoost_model('./processed_data/training_data.csv')
-#test_model('./trained_models/trained_XGBoost_model.pkl','./processed_data/testing_data.csv')
+def train_and_save_XGBoost_classifier_model():
+    """
+    Takes a CSV of processed data, processes it further and trains an XGBoost model on it.
+    Then saves it.
+    """
+    trained_model = train_XGBoost_classifier_model('./processed_data/training_data.csv')
+    save_model(trained_model['model'], trained_model['original_column_names'])
+    return None

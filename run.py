@@ -1,13 +1,10 @@
-def predict_historic_gameweek():
-    """
-    Takes a pre-trained model and makes predictions on the outcomes of a 
-    specific gameweek. Outputs a CSV which shows the predictions and the
-    actual points scored"""
-    pass
+from predictions import predict_gameweek
+from models import train_and_save_XGBoost_classifier_model, save_model, tune_XGBoost_model, test_model
 
-def predict_future_gameweek():
-    """
-    Takes a pre-trained model and makes predictions on the outcomes of a 
-    future gameweek. Outputs a CSV which shows the predictions.
-    """
-    pass
+
+
+predict_gameweek(30)
+
+#train_and_save_XGBoost_classifier_model()
+#tune_XGBoost_model('./processed_data/training_data.csv')
+#test_model('./trained_models/trained_XGBoost_model.pkl','./processed_data/testing_data.csv')
