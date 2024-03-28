@@ -19,12 +19,12 @@ def prep_test_or_train_data(data_csv):
     cleaned_data = data.dropna(subset=['win_odds'])
 
     #drop rows where player has played under 60 minutes
-    cleaned_data = cleaned_data[cleaned_data['minutes'] >= 60] 
+    filtered_data = cleaned_data[cleaned_data['minutes'] >= 60] 
 
     print('Loading data and dropping rows with no win_odds and fewer than 60 mins played')
 
     # Select relevant features
-    features = cleaned_data[['position_id',
+    features = filtered_data[['position_id',
                             'player_value',
                             'home_or_away_id', 
                             'opposition_id', 
@@ -39,7 +39,7 @@ def prep_test_or_train_data(data_csv):
                             ]]
     
     #target variable                        
-    target = cleaned_data['over_four_points']
+    target = filtered_data['over_four_points']
     
     # Encode categorical features
     print('Encoding home or away and opposition IDs')
@@ -76,7 +76,9 @@ def get_data_for_gameweeks():
     fixtures_data = get_fpl_fixtures_data()
     all_data['bootstrap_data'] = bootstrap_data
     all_data['fixtures_data'] = fixtures_data
+    print("getting all gameweeks data")
     for i in range(1, 29):
+        print(f'gameweek {i}')
         gameweeks_dict = {}
         gameweek_data = get_fpl_gameweek_live_data(i)
         gameweeks_dict['gameweek'] = i
@@ -191,19 +193,20 @@ def get_season_performances(player_id, current_gameweek_id, gameweeks_data):
     data for the last 4 gameweeks and returns their
     points and BPS
     """
-    season_performances_data = {'season_points': 0, 'season_bps': 0}
+    season_performances_data = {'season_points': 0, 'season_bps': 0, 'avg_points':0, 'avg_bps': 0}
     gameweeks = [gw for gw in gameweeks_data if gw['gameweek'] < current_gameweek_id]
-    number_of_gameweeks = len(gameweeks)
     for gw in gameweeks:
         players = gw['performances']['elements']
         player = next((player for player in players if player['id'] == player_id), 0)
         if player == 0:
-            season_performances_data = {'season_points': -1, 'season_bps': -1}
+            season_performances_data = {'season_points': -1, 'season_bps': -1,'avg_points':-1, 'avg_bps': -1}
             return season_performances_data
         points = player['stats']['total_points']
-        season_performances_data['season_points'] += points / number_of_gameweeks #to get average
+        season_performances_data['season_points'] += points 
         bps = player['stats']['bps']
-        season_performances_data['season_bps'] += bps / number_of_gameweeks #to get average
+        season_performances_data['season_bps'] += bps
+    season_performances_data['avg_points'] = season_performances_data['season_points'] / len(gameweeks)
+    season_performances_data['avg_bps'] = season_performances_data['season_bps'] / len(gameweeks)
     return season_performances_data
 
 def get_team_odds(team_info, fixture_id, bootstrap_data, fixtures_data):
@@ -268,7 +271,10 @@ def interpret_player_data(players, gameweeks_and_static_dict, gameweek, clean_an
     bootstrap = gameweeks_and_static_dict['bootstrap_data']
     all_gameweeks = gameweeks_and_static_dict['gameweeks']
     #Calling functions that combine the three data sources and return them nicely
+    print('getting player info for each week')
     for player in players:
+        #p = player['id']
+        #print(f'player {p}')
         opposition_info = get_opposition_info(player, fixtures, bootstrap)
         team_info = get_team_data(player['id'], bootstrap)
         recent_performances = get_recent_performances(player['id'], gameweek, all_gameweeks)
@@ -291,8 +297,8 @@ def interpret_player_data(players, gameweeks_and_static_dict, gameweek, clean_an
         team_strength = team_info['team_strength']
         recent_points = recent_performances['recent_points']
         recent_bps = recent_performances['recent_bps']
-        season_points = season_performances['season_points']
-        season_bps = season_performances['season_bps']
+        season_points = season_performances['avg_points']
+        season_bps = season_performances['avg_bps']
         win_odds = odds_data['win_odds']
         over_two_point_five_goals = odds_data['>2.5']
         over_four_points = 1 if player['stats']['total_points'] > 4 else 0
@@ -409,31 +415,30 @@ def create_future_gameweeks_df(gameweek):
     #players = all_gameweeks[0]['performances']['elements']
     players = []
     for player in bootstrap['elements']:
-        player_team_id = player['team']
-        player_stats = {
-                        "id": player['id'],
-                        "stats": {
-                            "minutes": 0,
-                            "total_points": 0
-                            },
-                        "explain": [
-                            {
-                            "fixture": get_fixture_id(fixtures, player_team_id, gameweek),
-                            "stats": [
-                                    {
-                                    "identifier": "minutes",
-                                    "points": 0,
-                                    "value": 0
-                                    }
+        if player['total_points'] > 50:
+            player_team_id = player['team']
+            player_stats = {
+                            "id": player['id'],
+                            "stats": {
+                                "minutes": 0,
+                                "total_points": 0
+                                },
+                            "explain": [
+                                {
+                                "fixture": get_fixture_id(fixtures, player_team_id, gameweek),
+                                "stats": [
+                                        {
+                                        "identifier": "minutes",
+                                        "points": 0,
+                                        "value": 0
+                                        }
+                                    ]
+                                }
                                 ]
                             }
-                            ]
-                        }
-        players.append(player_stats)
+            players.append(player_stats)
 
     interpret_player_data(players, all_gameweeks_data, gameweek, resp)
     df = pd.DataFrame(resp['performances'])
+ 
     return df
-
-
-#create_data_for_gameweeks(24,25,'gw24.csv')
