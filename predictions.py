@@ -18,9 +18,9 @@ def prep_data_for_prediction(gameweek_data):
     with open('saved_encoder.pkl', 'rb') as f:
         #Encoding opposition and home or away IDs
         encoder = pickle.load(f) 
-        encoded_features = encoder.transform(gameweek_data[['home_or_away_id', 'opposition_id']])
+        encoded_features = encoder.transform(gameweek_data[['home_or_away_id', 'position_id']])
         encoded_df = pd.DataFrame(encoded_features.toarray(), columns=encoder.get_feature_names_out())
-        gameweek_data.drop(['home_or_away_id', 'opposition_id'], axis=1)
+        gameweek_data.drop(['home_or_away_id', 'position_id'], axis=1)
         gameweek_data.reset_index(drop=True, inplace=True)  # Reset the index
         data_for_prediction = pd.concat([gameweek_data, encoded_df], axis=1)
 

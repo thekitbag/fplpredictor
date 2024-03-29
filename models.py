@@ -1,13 +1,78 @@
-import hashlib, pickle, os
+import hashlib, pickle, os, csv
+import numpy as np
+import pandas as pd
 
 from sklearn.ensemble import RandomForestClassifier 
 from sklearn.metrics import precision_score, recall_score, f1_score
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.model_selection import GridSearchCV
+from sklearn.utils import class_weight
+
 import xgboost as xgb
 from xgboost import XGBClassifier, plot_importance
 
-from processors import prep_test_or_train_data
+def prep_test_or_train_data(data_csv):
+    """
+    Take a csv of data, makes it into a pandas dataframe,
+    adjusts the content to make it appropriate for training a model
+    and returns the features, target variable and column names from the
+    original data
+    """
+    data_components = {}
+    data = pd.read_csv(data_csv)
+
+    #dropping rows with no win odds which happens when a player has moved clubs
+    cleaned_data = data.dropna(subset=['win_odds'])
+
+    #drop rows where player has played under 60 minutes
+    filtered_data = cleaned_data[cleaned_data['minutes'] >= 60]
+
+    print('Loading data and dropping rows with no win_odds and fewer than 60 mins played')
+
+    # Select relevant features
+    features = filtered_data[['position_id',
+                            'player_value',
+                            'home_or_away_id',
+                            'opposition_team_strength',
+                            'team_strength',
+                            'recent_points',
+                            'recent_bps',
+                            'season_points',
+                            'season_bps',
+                            'win_odds',
+                            'over_two_point_five_goals'
+                            ]]
+    
+    #target variable                        
+    target = filtered_data['over_four_points']
+    
+    # Encode categorical features
+    print('Encoding home or away and position id')
+    encoder = OneHotEncoder(handle_unknown='ignore') 
+    encoded_features = encoder.fit_transform(features[['home_or_away_id', 'position_id']])
+
+    # Save the encoder
+    with open('saved_encoder.pkl', 'wb') as f:  # Choose a suitable filename
+        pickle.dump(encoder, f)
+    
+    # Convert features to DataFrame before merging 
+    encoded_df = pd.DataFrame(encoded_features.toarray(), columns=encoder.get_feature_names_out()) # Convert sparse array to DataFrame
+
+    features = features.reset_index(drop=True)
+    encoded_df = encoded_df.reset_index(drop=True)
+
+    features = pd.concat([features, encoded_df], axis=1)
+
+    column_names = features.columns 
+
+    scaler = StandardScaler()
+    features = scaler.fit_transform(features)
+
+    data_components['features'] = features
+    data_components['column_names'] = column_names
+    data_components['target'] = target
+
+    return data_components
 
 def train_XGBoost_classifier_model(training_data_csv):
     """
@@ -16,20 +81,26 @@ def train_XGBoost_classifier_model(training_data_csv):
     """
     training_data = prep_test_or_train_data(training_data_csv)
 
-    best_params = {'colsample_bytree': 0.9, 'learning_rate': 0.15, 'max_depth': 6, 'n_estimators': 300, 'reg_alpha': 0.1, 'reg_lambda': 0.1, 'subsample': 0.7}
+    best_params = {'colsample_bytree': 0.9, 'learning_rate': 0.35, 'max_depth': 3, 'n_estimators': 75, 'reg_alpha': 0.01, 'reg_lambda': 0.15, 'subsample': 0.6}
 
-    learning_rate = best_params['learning_rate']
-    max_depth = best_params['max_depth']
-    n_estimators = best_params['n_estimators']
-    reg_alpha = best_params['reg_alpha']
-    reg_lambda = best_params['reg_lambda']
-    subsample = best_params['subsample']
-    colsample_bytree = best_params['colsample_bytree']
+    class_weights = class_weight.compute_class_weight(class_weight='balanced',
+                                                    classes=np.unique(training_data['target']),
+                                                    y=training_data['target'])
 
-    model = XGBClassifier(learning_rate=learning_rate, max_depth=max_depth, n_estimators=n_estimators, 
-                      reg_alpha=reg_alpha, reg_lambda=reg_lambda, subsample=subsample, 
-                      colsample_bytree=colsample_bytree) 
-    
+    # Assuming you have a dictionary to store these in
+    best_params['scale_pos_weight'] = class_weights[1]
+
+    model = XGBClassifier(**best_params) 
+
+    with open('actual_training.csv', 'w', newline='') as csvfile: 
+        features_df = training_data['features']
+        target_series = training_data['target']
+        target_series = target_series.reset_index(drop=True) 
+        combined_df = pd.concat([pd.DataFrame(features_df, columns=training_data['column_names']), target_series], axis=1)
+        writer = csv.writer(csvfile)
+
+        combined_df.to_csv(csvfile, mode='a', index=False)
+
     print('Training Model')
     model.fit(training_data['features'], training_data['target'])
     feature_names = model.get_booster().feature_names
@@ -43,14 +114,16 @@ def tune_XGBoost_model(training_data):
     the best combination.
     """
     param_grid = {
-    'learning_rate': [0.05, 0.1, 0.15], 
-    'max_depth': [4, 5, 6], 
-    'n_estimators': [200, 300, 400],
-    'reg_alpha': [0.01, 0.05, 0.1], 
-    'reg_lambda': [0.1, 0.2, 0.3], 
-    'subsample': [0.7, 0.8, 0.9],
-    'colsample_bytree': [0.8, 0.9, 1.0]
-    }
+        'learning_rate': [0.35, 0.45],
+        'max_depth': [3, 4],  # Slightly expanded
+        'n_estimators': [50, 75], # Test a middle ground
+        'reg_alpha': [0.01, 0.05, 0.1],  
+        'reg_lambda': [0.1, 0.15, 0.2, 0.25, 0.3],  # More fine-grained
+        'subsample': [0.6,  0.7, 0.8],  
+        'colsample_bytree': [0.7, 0.8, 0.9] 
+    } 
+
+
 
     xgb_model = XGBClassifier()  
     grid_search = GridSearchCV(estimator=xgb_model, param_grid=param_grid, cv=5, scoring='f1', verbose=1)

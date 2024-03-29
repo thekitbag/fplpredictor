@@ -3,7 +3,7 @@ from models import train_and_save_XGBoost_classifier_model, save_model, tune_XGB
 from processors import create_data_for_gameweeks
 
 
-predict_gameweek(30)
+predict_gameweek(26)
 
 #train_and_save_XGBoost_classifier_model()
 

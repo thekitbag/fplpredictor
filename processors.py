@@ -2,70 +2,7 @@ import pandas as pd
 import os, csv
 from random import randint
 from datetime import datetime
-from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from handlers import get_fpl_bootstrap_data, get_fpl_fixtures_data, get_fpl_gameweek_live_data 
-
-def prep_test_or_train_data(data_csv):
-    """
-    Take a csv of data, makes it into a pandas dataframe,
-    adjusts the content to make it appropriate for training a model
-    and returns the features, target variable and column names from the
-    original data
-    """
-    data_components = {}
-    data = pd.read_csv(data_csv)
-
-    #dropping rows with no win odds which happens when a player has moved clubs
-    cleaned_data = data.dropna(subset=['win_odds'])
-
-    #drop rows where player has played under 60 minutes
-    filtered_data = cleaned_data[cleaned_data['minutes'] >= 60] 
-
-    print('Loading data and dropping rows with no win_odds and fewer than 60 mins played')
-
-    # Select relevant features
-    features = filtered_data[['position_id',
-                            'player_value',
-                            'home_or_away_id', 
-                            'opposition_id', 
-                            'opposition_team_strength',
-                            'team_strength',
-                            'recent_points',
-                            'recent_bps',
-                            'season_points',
-                            'season_bps',
-                            'win_odds',
-                            'over_two_point_five_goals'
-                            ]]
-    
-    #target variable                        
-    target = filtered_data['over_four_points']
-    
-    # Encode categorical features
-    print('Encoding home or away and opposition IDs')
-    encoder = OneHotEncoder(handle_unknown='ignore') 
-    encoded_features = encoder.fit_transform(features[['home_or_away_id', 'opposition_id']])
-    print(encoder.get_feature_names_out()) 
-
-
-    # Convert features to DataFrame before merging 
-    encoded_df = pd.DataFrame(encoded_features.toarray(), columns=encoder.get_feature_names_out()) # Convert sparse array to DataFrame
-
-    features = features.reset_index(drop=True)
-    encoded_df = encoded_df.reset_index(drop=True)
-
-    features = pd.concat([features, encoded_df], axis=1)
-
-    column_names = features.columns 
-
-    scaler = StandardScaler()
-    features = scaler.fit_transform(features)
-
-    data_components['features'] = features
-    data_components['column_names'] = column_names
-    data_components['target'] = target
-
-    return data_components
 
 def get_data_for_gameweeks():
     """
