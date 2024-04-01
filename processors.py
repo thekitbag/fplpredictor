@@ -130,21 +130,25 @@ def get_season_performances(player_id, current_gameweek_id, gameweeks_data):
     data for the last 4 gameweeks and returns their
     points and BPS
     """
-    season_performances_data = {'season_points': 0, 'season_bps': 0, 'avg_points':0, 'avg_bps': 0}
+    season_performances_data = {'season_points': 0, 'season_bps': 0, 'season_minutes': 0}
+    season_averages = {'avg_points':0, 'avg_bps': 0, 'avg_minutes': 0}
     gameweeks = [gw for gw in gameweeks_data if gw['gameweek'] < current_gameweek_id]
     for gw in gameweeks:
         players = gw['performances']['elements']
         player = next((player for player in players if player['id'] == player_id), 0)
         if player == 0:
-            season_performances_data = {'season_points': -1, 'season_bps': -1,'avg_points':-1, 'avg_bps': -1}
-            return season_performances_data
+            season_averages = {'avg_points':-1, 'avg_bps': -1, 'avg_minutes': -1}
+            return season_averages
         points = player['stats']['total_points']
         season_performances_data['season_points'] += points 
         bps = player['stats']['bps']
         season_performances_data['season_bps'] += bps
-    season_performances_data['avg_points'] = season_performances_data['season_points'] / len(gameweeks)
-    season_performances_data['avg_bps'] = season_performances_data['season_bps'] / len(gameweeks)
-    return season_performances_data
+        minutes = player['stats']['minutes']
+        season_performances_data['season_minutes'] += minutes
+    season_averages['avg_points'] = season_performances_data['season_points'] / len(gameweeks)
+    season_averages['avg_bps'] = season_performances_data['season_bps'] / len(gameweeks)
+    season_averages['avg_minutes'] = season_performances_data['season_minutes'] / len(gameweeks)
+    return season_averages
 
 def get_team_odds(team_info, fixture_id, bootstrap_data, fixtures_data):
     odds_data_dict = {}
@@ -236,6 +240,7 @@ def interpret_player_data(players, gameweeks_and_static_dict, gameweek, clean_an
         recent_bps = recent_performances['recent_bps']
         season_points = season_performances['avg_points']
         season_bps = season_performances['avg_bps']
+        season_minutes = season_performances['avg_minutes']
         win_odds = odds_data['win_odds']
         over_two_point_five_goals = odds_data['>2.5']
         over_four_points = 1 if player['stats']['total_points'] > 4 else 0
@@ -268,6 +273,7 @@ def interpret_player_data(players, gameweeks_and_static_dict, gameweek, clean_an
                 #season form
                 'season_points': season_points,
                 'season_bps': season_bps,
+                'season_minutes': season_minutes,
                 #odds_data
                 'win_odds': win_odds,
                 'over_two_point_five_goals': over_two_point_five_goals,

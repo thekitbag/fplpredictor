@@ -3,10 +3,14 @@ import numpy as np
 import pandas as pd
 
 from sklearn.ensemble import RandomForestClassifier 
-from sklearn.metrics import precision_score, recall_score, f1_score
+from sklearn.metrics import precision_score, recall_score, f1_score, make_scorer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.model_selection import GridSearchCV
 from sklearn.utils import class_weight
+from imblearn.over_sampling import RandomOverSampler, SMOTE
+from imblearn.under_sampling import RandomUnderSampler
+
+
 
 import xgboost as xgb
 from xgboost import XGBClassifier, plot_importance
@@ -30,7 +34,7 @@ def prep_test_or_train_data(data_csv):
     print('Loading data and dropping rows with no win_odds and fewer than 60 mins played')
 
     # Select relevant features
-    features = filtered_data[['position_id',
+    features = cleaned_data[['position_id',
                             'player_value',
                             'home_or_away_id',
                             'opposition_team_strength',
@@ -39,12 +43,13 @@ def prep_test_or_train_data(data_csv):
                             'recent_bps',
                             'season_points',
                             'season_bps',
+                            'season_minutes',
                             'win_odds',
                             'over_two_point_five_goals'
                             ]]
     
     #target variable                        
-    target = filtered_data['over_four_points']
+    target = cleaned_data['over_four_points']
     
     # Encode categorical features
     print('Encoding home or away and position id')
@@ -63,10 +68,13 @@ def prep_test_or_train_data(data_csv):
 
     features = pd.concat([features, encoded_df], axis=1)
 
+    features = features.drop(columns=['position_id', 'home_or_away_id']) 
+
+
     column_names = features.columns 
 
     scaler = StandardScaler()
-    features = scaler.fit_transform(features)
+    #features = scaler.fit_transform(features)
 
     data_components['features'] = features
     data_components['column_names'] = column_names
@@ -81,16 +89,12 @@ def train_XGBoost_classifier_model(training_data_csv):
     """
     training_data = prep_test_or_train_data(training_data_csv)
 
-    best_params = {'colsample_bytree': 0.9, 'learning_rate': 0.35, 'max_depth': 3, 'n_estimators': 75, 'reg_alpha': 0.01, 'reg_lambda': 0.15, 'subsample': 0.6}
+    best_params = {'colsample_bytree': 0.1, 'learning_rate': 3, 'max_depth': 3, 'n_estimators': 200, 'reg_alpha': 10, 'reg_lambda': 10, 'subsample': 0.1}
 
-    class_weights = class_weight.compute_class_weight(class_weight='balanced',
-                                                    classes=np.unique(training_data['target']),
-                                                    y=training_data['target'])
 
-    # Assuming you have a dictionary to store these in
-    best_params['scale_pos_weight'] = class_weights[1]
-
-    model = XGBClassifier(**best_params) 
+    """
+    the below can be used for debugging what the model is actually trained on
+    """
 
     with open('actual_training.csv', 'w', newline='') as csvfile: 
         features_df = training_data['features']
@@ -100,11 +104,25 @@ def train_XGBoost_classifier_model(training_data_csv):
         writer = csv.writer(csvfile)
 
         combined_df.to_csv(csvfile, mode='a', index=False)
+    
 
     print('Training Model')
-    model.fit(training_data['features'], training_data['target'])
+
+    X_train = training_data['features']
+    y_train = training_data['target']
+
+    oversample = SMOTE(sampling_strategy=0.8) 
+    undersample = RandomUnderSampler(sampling_strategy=0.98)  
+
+    X_resampled, y_resampled = oversample.fit_resample(X_train, y_train)
+    X_resampled, y_resampled = undersample.fit_resample(X_resampled, y_resampled)
+
+    model = XGBClassifier()  
+    model.fit(X_resampled, y_resampled) 
+
+
     feature_names = model.get_booster().feature_names
-    print(feature_names)
+    print('feature names = ', feature_names)
 
     return {'model': model, 'original_column_names': training_data['column_names']}
 
@@ -113,20 +131,29 @@ def tune_XGBoost_model(training_data):
     Tries different hyperparamters of a model and prints
     the best combination.
     """
+
     param_grid = {
-        'learning_rate': [0.35, 0.45],
-        'max_depth': [3, 4],  # Slightly expanded
-        'n_estimators': [50, 75], # Test a middle ground
-        'reg_alpha': [0.01, 0.05, 0.1],  
-        'reg_lambda': [0.1, 0.15, 0.2, 0.25, 0.3],  # More fine-grained
-        'subsample': [0.6,  0.7, 0.8],  
-        'colsample_bytree': [0.7, 0.8, 0.9] 
+    'learning_rate': [3, 5, 9], 
+    'max_depth': [3,6,9], 
+    'n_estimators': [5,50,200], 
+    'reg_alpha': [2, 6, 10],  
+    'reg_lambda': [2, 6, 10],
+    'subsample': [0.1, 1, 2],
+    'colsample_bytree': [0.1, 0.5, 0.9] 
     } 
+    
+    def custom_scorer(y_true, y_pred):
+        recall = recall_score(y_true, y_pred)
+        precision = precision_score(y_true, y_pred)
+        return 0.3 * recall + 0.7 * precision  
+        
+
+    my_custom_scorer = make_scorer(custom_scorer) 
 
 
 
     xgb_model = XGBClassifier()  
-    grid_search = GridSearchCV(estimator=xgb_model, param_grid=param_grid, cv=5, scoring='f1', verbose=1)
+    grid_search = GridSearchCV(estimator=xgb_model, param_grid=param_grid, cv=5, scoring=my_custom_scorer, verbose=1)
 
     test_data = prep_test_or_train_data('./processed_data/testing_data.csv')
 

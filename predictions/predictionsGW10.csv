@@ -1,0 +1,732 @@
+player_name,opposition_name,points,predicted_high_scorer
+Balogun,Sheffield Utd,0,1.0
+Fleck,Arsenal,1,1.0
+Jebbison,Arsenal,0,1.0
+Lowe,Arsenal,0,1.0
+McBurnie,Arsenal,0,1.0
+Ndiaye,Arsenal,0,1.0
+Norrington-Davies,Arsenal,0,1.0
+Norwood,Arsenal,1,1.0
+Osborn,Arsenal,0,1.0
+Osula,Arsenal,0,1.0
+Austin,Crystal Palace,0,1.0
+Bentancur,Crystal Palace,1,1.0
+Bissouma,Crystal Palace,3,1.0
+Gil Salvatierra,Crystal Palace,1,1.0
+Davies,Crystal Palace,1,1.0
+Dier,Crystal Palace,0,1.0
+Leite de Souza Junior,Crystal Palace,1,1.0
+Forster,Crystal Palace,0,1.0
+Højbjerg,Crystal Palace,1,1.0
+Kane,Crystal Palace,0,1.0
+Kulusevski,Crystal Palace,3,1.0
+Foderingham,Arsenal,0,1.0
+Egan,Arsenal,0,1.0
+Lo Celso,Crystal Palace,0,1.0
+Davies,Arsenal,0,1.0
+Panzo,Liverpool,0,1.0
+Richards,Liverpool,0,1.0
+Furtado Scarpa,Liverpool,0,1.0
+Shelvey,Liverpool,0,1.0
+Surridge,Liverpool,0,1.0
+Toffolo,Liverpool,1,1.0
+Ui-jo,Liverpool,0,1.0
+Williams,Liverpool,1,1.0
+Wood,Liverpool,0,1.0
+Worrall,Liverpool,0,1.0
+Yates,Liverpool,1,1.0
+Ahmedhodžić,Arsenal,0,1.0
+Amissah,Arsenal,0,1.0
+Baldock,Arsenal,0,1.0
+Basham,Arsenal,0,1.0
+Berge,Bournemouth,1,1.0
+Bogle,Arsenal,0,1.0
+Brewster,Arsenal,1,1.0
+Coulibaly,Arsenal,0,1.0
+Lloris,Crystal Palace,0,1.0
+Maddison,Crystal Palace,6,1.0
+Tomás Oliveira,Newcastle,0,1.0
+Cornet,Everton,0,1.0
+Coventry,Everton,0,1.0
+Cresswell,Everton,2,1.0
+Downes,Everton,0,1.0
+Palmieri dos Santos,Everton,0,1.0
+Fabianski,Everton,0,1.0
+Fornals Malla,Everton,0,1.0
+Ings,Everton,1,1.0
+Johnson,Everton,0,1.0
+Kehrer,Everton,0,1.0
+Mubama,Everton,0,1.0
+Tolentino Coelho de Lima,Everton,1,1.0
+Rice,Sheffield Utd,6,1.0
+Scamacca,Everton,0,1.0
+Souček,Everton,1,1.0
+Vlašić,Everton,0,1.0
+Zouma,Everton,2,1.0
+Aït-Nouri,Newcastle,0,1.0
+Bentley,Newcastle,0,1.0
+Bolla,Newcastle,0,1.0
+Coufal,Everton,2,1.0
+Bowen,Everton,2,1.0
+Ndombélé Alvaro,Crystal Palace,0,1.0
+Benrahma,Everton,0,1.0
+Porro,Crystal Palace,2,1.0
+Perišić,Crystal Palace,0,1.0
+Reguilón,Man Utd,1,1.0
+de Andrade,Crystal Palace,3,1.0
+Rodon,Crystal Palace,0,1.0
+Romero,Crystal Palace,4,1.0
+Sánchez,Crystal Palace,0,1.0
+Sarr,Crystal Palace,2,1.0
+Sessegnon,Crystal Palace,0,1.0
+Skipp,Crystal Palace,0,1.0
+Heung-min,Crystal Palace,10,1.0
+Spence,Crystal Palace,0,1.0
+Tanganga,Crystal Palace,0,1.0
+Udogie,Crystal Palace,0,1.0
+Vicario,Crystal Palace,3,1.0
+Whiteman,Crystal Palace,0,1.0
+Aguerd,Everton,2,1.0
+Antonio,Everton,1,1.0
+Areola,Everton,3,1.0
+Ojeda Rodríguez,Liverpool,0,1.0
+O'Brien,Liverpool,0,1.0
+Niakhaté,Liverpool,1,1.0
+Martial,Man City,1,1.0
+McTominay,Man City,2,1.0
+Mengi,Aston Villa,1,1.0
+Pellistri Rebollo,Man City,0,1.0
+Varane,Man City,0,1.0
+Rashford,Man City,2,1.0
+Sancho,Man City,0,1.0
+Shaw,Man City,0,1.0
+Shoretire,Man City,0,1.0
+van de Beek,Man City,0,1.0
+Wan-Bissaka,Man City,0,1.0
+Almirón Rejala,Wolves,2,1.0
+Anderson,Wolves,0,1.0
+Ashby,Wolves,0,1.0
+Botman,Wolves,0,1.0
+Guimarães Rodriguez Moura,Wolves,2,1.0
+Burn,Wolves,0,1.0
+Darlow,Wolves,0,1.0
+Dubravka,Wolves,0,1.0
+Fraser,Wolves,0,1.0
+Martínez,Man City,0,1.0
+Malacia,Man City,0,1.0
+Mighten,Liverpool,0,1.0
+Mainoo,Man City,0,1.0
+Walker,Man Utd,8,1.0
+Telles,Man City,0,1.0
+Diallo,Man City,0,1.0
+dos Santos,Man City,0,1.0
+Borges Fernandes,Man City,1,1.0
+Williams,Man City,0,1.0
+Bailly,Man City,0,1.0
+Casimiro,Man City,0,1.0
+Dalot Teixeira,Man City,1,1.0
+Elanga,Liverpool,2,1.0
+Eriksen,Man City,2,1.0
+Fernández Carreras,Man City,0,1.0
+Rodrigues de Paula Santos,Man City,0,1.0
+Garnacho,Man City,1,1.0
+Mejbri,Man City,0,1.0
+Heaton,Man City,0,1.0
+Henderson,Spurs,0,1.0
+Lindelöf,Man City,1,1.0
+Maguire,Man City,1,1.0
+Gillespie,Wolves,0,1.0
+Gordon,Wolves,2,1.0
+Hayden,Wolves,0,1.0
+Hendrick,Wolves,0,1.0
+Awoniyi,Liverpool,1,1.0
+Biancone,Liverpool,0,1.0
+Boly,Liverpool,1,1.0
+Bowler,Liverpool,0,1.0
+Cook,Liverpool,0,1.0
+dos Santos de Oliveira,Liverpool,0,1.0
+Dennis,Liverpool,0,1.0
+Dräger,Liverpool,0,1.0
+de Almeida Monteiro,Liverpool,0,1.0
+Freuler,Liverpool,0,1.0
+Gibbs-White,Liverpool,2,1.0
+Hennessey,Liverpool,0,1.0
+Horvath,Liverpool,0,1.0
+Johnson,Crystal Palace,3,1.0
+Kouyaté,Liverpool,0,1.0
+Laryea,Liverpool,0,1.0
+Mangala,Liverpool,1,1.0
+Mbe Soh,Liverpool,0,1.0
+McKenna,Liverpool,0,1.0
+Aurier,Liverpool,1,1.0
+Arter,Liverpool,0,1.0
+Aguilera Zamora,Liverpool,0,1.0
+Murphy,Wolves,0,1.0
+Isak,Wolves,0,1.0
+Apolinário de Lira,Wolves,2,1.0
+Krafth,Wolves,0,1.0
+Kuol,Wolves,0,1.0
+Lascelles,Wolves,0,1.0
+Lewis,Wolves,0,1.0
+Longstaff,Wolves,1,1.0
+Manquillo Gaitán,Wolves,0,1.0
+Pope,Wolves,2,1.0
+Wilson,Wolves,13,1.0
+Ritchie,Wolves,0,1.0
+Saint-Maximin,Wolves,0,1.0
+Schär,Wolves,5,1.0
+Targett,Wolves,0,1.0
+Tonali,Wolves,0,1.0
+Trippier,Wolves,0,1.0
+Watts,Wolves,0,1.0
+Willock,Wolves,1,1.0
+Bueno López,Newcastle,0,1.0
+Cundle,Newcastle,0,1.0
+Steffen,Man Utd,0,1.0
+Krul,Aston Villa,0,1.0
+Lavia,Brentford,0,1.0
+Endo,Nott'm Forest,1,1.0
+Vítek,Man City,0,1.0
+Marschall,Luton,0,1.0
+Humphreys,Brentford,0,1.0
+Zaniolo,Luton,0,1.0
+Adams,Burnley,0,1.0
+Delcroix,Bournemouth,0,1.0
+Ramsey,Bournemouth,0,1.0
+Mavropanos,Everton,0,1.0
+de Souza Eugênio,Brentford,1,1.0
+Doku,Man Utd,1,1.0
+Montiel,Liverpool,0,1.0
+Beach,Brentford,0,1.0
+da Silva Moreira,Brentford,0,1.0
+Johnson,Aston Villa,0,1.0
+Harris,Brighton,0,1.0
+Brierley,Chelsea,0,1.0
+Gore,Man City,0,1.0
+Davies,Arsenal,0,1.0
+Ward-Prowse,Everton,2,1.0
+Petrović,Brentford,0,1.0
+Hamer,Arsenal,2,1.0
+Scott,Burnley,2,1.0
+Ramalho Chermiti,West Ham,1,1.0
+Hein,Sheffield Utd,0,1.0
+Anang,Everton,0,1.0
+Francis-Clarke,Aston Villa,0,1.0
+Cannon,West Ham,0,1.0
+Onyango,West Ham,0,1.0
+Stansfield,Brighton,0,1.0
+Dibley-Dias,Brighton,0,1.0
+Seriki,Arsenal,0,1.0
+Marsh,Arsenal,0,1.0
+Brooks,Arsenal,0,1.0
+Hackford,Arsenal,0,1.0
+Rak-Sakyi,Spurs,1,1.0
+Gordon,Spurs,0,1.0
+Bergström,Brentford,0,1.0
+Odobert,Bournemouth,0,1.0
+Harrison,West Ham,6,1.0
+Traoré,Brighton,0,1.0
+Zych,Luton,0,1.0
+Castagne,Brighton,2,1.0
+Dawson,Newcastle,1,1.0
+Omobamidele,Liverpool,0,1.0
+Sangaré,Liverpool,1,1.0
+Origi,Liverpool,0,1.0
+Bellegarde,Newcastle,0,1.0
+Gilchrist,Brentford,0,1.0
+Stutter,Brentford,0,1.0
+Matos,Brentford,0,1.0
+Hunt,West Ham,0,1.0
+Ola-Adebomi,Spurs,0,1.0
+Ozoh,Spurs,0,1.0
+Donley,Crystal Palace,0,1.0
+Brooking,Brentford,0,1.0
+Raymond,Spurs,0,1.0
+Kim,Chelsea,0,1.0
+Chambers,Nott'm Forest,0,1.0
+Townsend,Aston Villa,1,1.0
+Scanlon,Nott'm Forest,0,1.0
+Luker,Aston Villa,0,1.0
+Oné,Arsenal,1,1.0
+Buyabu,Arsenal,0,1.0
+Domínguez,Liverpool,1,1.0
+Vlachodimos,Liverpool,0,1.0
+Kudus,Everton,1,1.0
+Amrabat,Man City,0,1.0
+Baleba,Fulham,2,1.0
+Gomes Betuncal,West Ham,0,1.0
+Benda,Brighton,0,1.0
+Thomas,Arsenal,0,1.0
+Massengo,Bournemouth,0,1.0
+Bayindir,Man City,0,1.0
+Santiago Costa dos Santos,Liverpool,1,1.0
+Bueno,Newcastle,0,1.0
+González,Newcastle,0,1.0
+Lenglet,Luton,0,1.0
+Fati Vieira,Fulham,1,1.0
+Ghoddos,Chelsea,0,1.0
+Phillips,Crystal Palace,0,1.0
+Evans,Man City,1,1.0
+Fraser,Newcastle,0,1.0
+Sinisterra,Burnley,0,1.0
+Trésor,Bournemouth,1,1.0
+Ballo-Touré,Brighton,0,1.0
+Gravenberch,Nott'm Forest,1,1.0
+Aarons,Burnley,2,1.0
+Álvarez Velázquez,Everton,1,1.0
+Véliz,Crystal Palace,0,1.0
+Gomes,Newcastle,4,1.0
+Lockyer,Aston Villa,-1,1.0
+Robinson,Arsenal,0,1.0
+Ogbonna,Everton,0,1.0
+Nelson,Sheffield Utd,1,1.0
+Lonergan,West Ham,0,1.0
+Karius,Wolves,0,1.0
+Dummett,Wolves,0,1.0
+Mpanzu,Aston Villa,1,1.0
+Solomon,Crystal Palace,0,1.0
+Torres,Luton,2,1.0
+Timber,Sheffield Utd,0,1.0
+Chong,Aston Villa,1,1.0
+Slimane,Arsenal,1,1.0
+Young,West Ham,0,1.0
+Borges Damaceno,Brentford,0,1.0
+Santos Carneiro Da Cunha,Newcastle,2,1.0
+Borges da Silva,Brighton,2,1.0
+Larouci,Arsenal,0,1.0
+Traoré,Arsenal,0,1.0
+Traoré,Newcastle,1,1.0
+Cabral Semedo,Newcastle,1,1.0
+Scarlett,Crystal Palace,0,1.0
+Šarkić,Newcastle,0,1.0
+Silva,Newcastle,0,1.0
+Giles,Aston Villa,1,1.0
+Ganchinho Guedes,Newcastle,0,1.0
+Hodge,Newcastle,0,1.0
+Hoever,Newcastle,0,1.0
+Hee-chan,Newcastle,7,1.0
+Jiménez,Brighton,1,1.0
+Gomes da Silva,Newcastle,1,1.0
+Castro Otto,Newcastle,0,1.0
+Cavaco Jordão,Newcastle,0,1.0
+Kalajdzic,Newcastle,1,1.0
+Kilman,Newcastle,1,1.0
+King,Newcastle,0,1.0
+Lemina,Newcastle,9,1.0
+Nunes,Man Utd,0,1.0
+Lomba Neto,Newcastle,5,1.0
+Castelo Podence,Newcastle,0,1.0
+Malheiro de Sá,Newcastle,1,1.0
+Sarabia,Newcastle,0,1.0
+Amdouni,Bournemouth,1,1.0
+Kerkez,Burnley,1,1.0
+Trafford,Bournemouth,2,1.0
+Onana,Man City,2,1.0
+Hinshelwood,Fulham,0,1.0
+Dodgson,Bournemouth,0,1.0
+Burstow,Brentford,0,1.0
+Dobbin,West Ham,0,1.0
+De Fougerolles,Brighton,0,1.0
+Quansah,Nott'm Forest,0,1.0
+Clark,Nott'm Forest,0,1.0
+Doak,Nott'm Forest,0,1.0
+McConnell,Nott'm Forest,0,1.0
+Barkley,Aston Villa,2,1.0
+Brown,Aston Villa,1,1.0
+Forson,Man City,0,1.0
+Livramento,Wolves,0,1.0
+Murphy,Wolves,0,1.0
+Miley,Wolves,0,1.0
+Shelvey,Liverpool,0,1.0
+Powell,Liverpool,0,1.0
+de Souza Costa,Arsenal,2,1.0
+van de Ven,Crystal Palace,2,1.0
+Olakigbe,Chelsea,0,1.0
+Greenwood,Burnley,0,1.0
+Kellyman,Luton,0,1.0
+dos Santos de Paulo,Fulham,2,1.0
+Doherty,Newcastle,0,1.0
+Diaby,Luton,13,1.0
+Redmond,Bournemouth,1,1.0
+Danjuma Groeneveld,West Ham,0,1.0
+Kaboré,Aston Villa,0,1.0
+Barnes,Wolves,0,1.0
+Aina,Liverpool,1,1.0
+Koleosho,Bournemouth,2,1.0
+Radu,Burnley,3,1.0
+Højlund,Man City,2,1.0
+Bruun Larsen,Bournemouth,1,1.0
+Maatsen,Brentford,1,1.0
+Bassey,Brighton,2,1.0
+Disasi,Brentford,2,1.0
+Ugochukwu,Brentford,1,1.0
+Kaminski,Aston Villa,2,1.0
+França de Oliveira,Spurs,1,1.0
+Gvardiol,Man Utd,6,1.0
+Stones,Man Utd,6,1.0
+Gómez,Man Utd,0,1.0
+Alves Soares,Sheffield Utd,0,1.0
+Schade,Chelsea,0,1.0
+Toney,Chelsea,0,1.0
+Trevitt,Chelsea,0,1.0
+Wissa,Chelsea,2,1.0
+Yarmoliuk,Chelsea,1,1.0
+Jorgensen,Chelsea,0,1.0
+Adingra,Fulham,2,1.0
+Alzate,Fulham,0,1.0
+Ayari,Fulham,0,1.0
+Buonanotte,Fulham,1,1.0
+Caicedo Corozo,Brentford,1,1.0
+Connolly,Fulham,0,1.0
+Dahoud,Fulham,2,1.0
+Dunk,Fulham,2,1.0
+Enciso,Fulham,0,1.0
+Estupiñán,Fulham,0,1.0
+Ferguson,Fulham,8,1.0
+Gilmour,Fulham,1,1.0
+Groß,Fulham,6,1.0
+Junqueira de Jesus,Fulham,1,1.0
+Strakosha,Chelsea,0,1.0
+Roerslev Rasmussen,Chelsea,6,1.0
+Kozłowski,Fulham,0,1.0
+Raya Martin,Sheffield Utd,6,1.0
+Bidstrup,Chelsea,0,1.0
+Canós Tenés,Chelsea,0,1.0
+Collins,Chelsea,6,1.0
+Cox,Chelsea,0,1.0
+Damsgaard,Chelsea,0,1.0
+Dasilva,Chelsea,0,1.0
+Dervişoğlu,Chelsea,0,1.0
+Flekken,Chelsea,6,1.0
+Goode,Chelsea,0,1.0
+Henry,Chelsea,0,1.0
+Hickey,Chelsea,6,1.0
+Janelt,Chelsea,3,1.0
+Jensen,Chelsea,3,1.0
+Lewis-Potter,Chelsea,0,1.0
+Mbeumo,Chelsea,13,1.0
+Mee,Chelsea,0,1.0
+Nørgaard,Chelsea,2,1.0
+Onyeka,Chelsea,0,1.0
+Pinnock,Chelsea,15,1.0
+Karbownik,Fulham,0,1.0
+Lallana,Fulham,1,1.0
+Weghorst,Bournemouth,0,1.0
+Brownhill,Bournemouth,2,1.0
+Cork,Bournemouth,0,1.0
+Costelloe,Bournemouth,0,1.0
+Cullen,Bournemouth,0,1.0
+Egan-Riley,Bournemouth,0,1.0
+Ekdal,Bournemouth,0,1.0
+Foster,Bournemouth,0,1.0
+Franchi,Bournemouth,0,1.0
+Gudmundsson,Bournemouth,2,1.0
+McNally,Bournemouth,0,1.0
+Muric,Bournemouth,0,1.0
+O'Shea,Bournemouth,5,1.0
+Obafemi,Bournemouth,0,1.0
+Peacock-Farrell,Bournemouth,0,1.0
+Roberts,Bournemouth,0,1.0
+Rodriguez,Bournemouth,1,1.0
+Taylor,Bournemouth,6,1.0
+Thomas,Bournemouth,0,1.0
+Twine,Bournemouth,0,1.0
+Vigouroux,Bournemouth,0,1.0
+Churlinov,Bournemouth,0,1.0
+Beyer,Bournemouth,0,1.0
+Lamptey,Fulham,0,1.0
+Hedilazio,Bournemouth,0,1.0
+March,Fulham,0,1.0
+McGill,Fulham,0,1.0
+Milner,Fulham,0,1.0
+Mitoma,Fulham,2,1.0
+Moder,Fulham,0,1.0
+Sánchez,Brentford,2,1.0
+Sarmiento Morante,Fulham,0,1.0
+Scherpen,Fulham,0,1.0
+Steele,Fulham,3,1.0
+Undav,Fulham,0,1.0
+van Hecke,Fulham,0,1.0
+Veltman,Fulham,1,1.0
+Verbruggen,Fulham,0,1.0
+Webster,Fulham,2,1.0
+Welbeck,Fulham,0,1.0
+Zeqiri,Fulham,0,1.0
+Agyei,Bournemouth,0,1.0
+Al-Dakhil,Bournemouth,0,1.0
+Bastien,Bournemouth,0,1.0
+Bech Sørensen,Chelsea,0,1.0
+Baptiste,Chelsea,0,1.0
+Balcombe,Chelsea,0,1.0
+Tierney,Sheffield Utd,0,1.0
+Trossard,Sheffield Utd,1,1.0
+Trusty,Arsenal,0,1.0
+Turner,Liverpool,2,1.0
+White,Sheffield Utd,6,1.0
+Xhaka,Sheffield Utd,0,1.0
+Zinchenko,Sheffield Utd,8,1.0
+Moreno Lopera,Luton,0,1.0
+Archer,Arsenal,1,1.0
+Bailey,Luton,4,1.0
+Buendía Stati,Luton,0,1.0
+Cash,Luton,5,1.0
+Chambers,Luton,0,1.0
+Coutinho Correia,Luton,0,1.0
+Davis,Luton,0,1.0
+Dendoncker,Luton,1,1.0
+Santos Silva,Luton,1,1.0
+Digne,Luton,2,1.0
+Soares de Paulo,Luton,7,1.0
+Durán,Luton,0,1.0
+Tomiyasu,Sheffield Utd,7,1.0
+Varela Tavares,Liverpool,0,1.0
+Ajer,Chelsea,7,1.0
+Smith Rowe,Sheffield Utd,6,1.0
+Elneny,Sheffield Utd,4,1.0
+Ferreira Vieira,Sheffield Utd,6,1.0
+dos Santos Magalhães,Sheffield Utd,0,1.0
+Havertz,Sheffield Utd,3,1.0
+Holding,Spurs,0,1.0
+Fernando de Jesus,Sheffield Utd,0,1.0
+Frello Filho,Sheffield Utd,0,1.0
+Kiwior,Sheffield Utd,6,1.0
+Oliveira Alencar,Sheffield Utd,0,1.0
+Martinelli Silva,Sheffield Utd,3,1.0
+Nketiah,Sheffield Utd,17,1.0
+Ødegaard,Sheffield Utd,0,1.0
+Partey,Sheffield Utd,0,1.0
+Pépé,Sheffield Utd,0,1.0
+Ramsdale,Sheffield Utd,0,1.0
+Rúnarsson,Sheffield Utd,0,1.0
+Saka,Sheffield Utd,6,1.0
+Saliba,Sheffield Utd,7,1.0
+Sambi Lokonga,Aston Villa,0,1.0
+Hause,Luton,0,1.0
+Iroegbunam,Luton,0,1.0
+Kamara,Luton,2,1.0
+Konsa Ngoyo,Luton,2,1.0
+Kilkenny,Burnley,0,1.0
+Kluivert,Burnley,0,1.0
+Lowe,Burnley,0,1.0
+Marcondes,Burnley,0,1.0
+Mepham,Burnley,2,1.0
+Moore,Burnley,0,1.0
+Murara Neto,Burnley,0,1.0
+Ouattara,Burnley,0,1.0
+Pearson,Burnley,0,1.0
+Randolph,Burnley,0,1.0
+Rothwell,Burnley,1,1.0
+Semenyo,Burnley,9,1.0
+Senesi,Burnley,0,1.0
+Smith,Burnley,1,1.0
+Solanke,Burnley,2,1.0
+Tavernier,Burnley,2,1.0
+Traorè,Burnley,0,1.0
+Travers,Burnley,0,1.0
+Zabarnyi,Burnley,2,1.0
+Kelly,Burnley,2,1.0
+Hill,Burnley,0,1.0
+Fredericks,Burnley,0,1.0
+Sinisalo,Luton,0,1.0
+Martínez Romero,Luton,0,1.0
+McGinn,Luton,8,1.0
+Mings,Luton,0,1.0
+Nakamba,Aston Villa,2,1.0
+Olsen,Luton,0,1.0
+Philogene-Bidace,Luton,0,1.0
+Ramsey,Luton,0,1.0
+Sanson,Luton,0,1.0
+Tielemans,Luton,1,1.0
+Dembélé,Burnley,0,1.0
+Traoré,Luton,1,1.0
+Watkins,Luton,2,1.0
+Moraes Ferreira da Silva,Luton,0,1.0
+Anthony,Burnley,0,1.0
+Billing,Burnley,8,1.0
+Brooks,Burnley,0,1.0
+Christie,Burnley,2,1.0
+Cook,Burnley,0,1.0
+da Silva,Bournemouth,1,1.0
+Zaroury,Bournemouth,2,1.0
+Hernandez,Man Utd,6,1.0
+Gomez,Nott'm Forest,1,1.0
+Jones,Nott'm Forest,0,1.0
+Kelleher,Nott'm Forest,0,1.0
+Konaté,Nott'm Forest,6,1.0
+Díaz,Nott'm Forest,0,1.0
+Mac Allister,Nott'm Forest,2,1.0
+Matip,Nott'm Forest,0,1.0
+Phillips,Nott'm Forest,0,1.0
+Robertson,Nott'm Forest,0,1.0
+Salah,Nott'm Forest,8,1.0
+Szoboszlai,Nott'm Forest,12,1.0
+Alcántara do Nascimento,Nott'm Forest,0,1.0
+Tsimikas,Nott'm Forest,6,1.0
+van den Berg,Nott'm Forest,0,1.0
+van Dijk,Nott'm Forest,8,1.0
+Adebayo,Aston Villa,1,1.0
+Andersen,Aston Villa,0,1.0
+Bell,Aston Villa,0,1.0
+Berry,Aston Villa,0,1.0
+Burke,Aston Villa,0,1.0
+Henderson,Nott'm Forest,0,1.0
+Gakpo,Nott'm Forest,1,1.0
+Clark,Aston Villa,0,1.0
+Tavares,Nott'm Forest,0,1.0
+Mbabu,Brighton,0,1.0
+Mitrović,Brighton,0,1.0
+Muniz Carvalho,Brighton,0,1.0
+Palhinha Gonçalves,Brighton,10,1.0
+Ream,Brighton,2,1.0
+Reed,Brighton,1,1.0
+Robinson,Brighton,1,1.0
+Rodák,Brighton,0,1.0
+Tete,Brighton,0,1.0
+Adarabioyo,Brighton,0,1.0
+Alves Morais,Brighton,0,1.0
+Wilson,Brighton,3,1.0
+San Miguel del Castillo,Nott'm Forest,0,1.0
+Alexander-Arnold,Nott'm Forest,5,1.0
+Ramses Becker,Nott'm Forest,7,1.0
+Bajcetic,Nott'm Forest,0,1.0
+Núñez Ribeiro,Nott'm Forest,10,1.0
+Teixeira da Silva,Nott'm Forest,6,1.0
+Elliott,Nott'm Forest,1,1.0
+Campbell,Aston Villa,0,1.0
+Doughty,Aston Villa,0,1.0
+Ampadu,Brentford,0,1.0
+Veiga de Carvalho e Silva,Man Utd,7,1.0
+Cancelo,Man Utd,0,1.0
+Carson,Man Utd,0,1.0
+Charles,Man Utd,0,1.0
+De Bruyne,Man Utd,0,1.0
+Gato Alves Dias,Man Utd,6,1.0
+Doyle,Newcastle,1,1.0
+Santana de Moraes,Man Utd,7,1.0
+Foden,Man Utd,7,1.0
+Grealish,Man Utd,3,1.0
+Haaland,Man Utd,16,1.0
+Kovačić,Man Utd,1,1.0
+Laporte,Man Utd,0,1.0
+Lewis,Man Utd,0,1.0
+Mahrez,Man Utd,0,1.0
+McAtee,Arsenal,2,1.0
+Ortega Moreno,Man Utd,0,1.0
+Palmer,Brentford,2,1.0
+Perrone,Man Utd,0,1.0
+Phillips,Man Utd,0,1.0
+Bobb,Man Utd,0,1.0
+Álvarez,Man Utd,2,1.0
+Freeman,Aston Villa,0,1.0
+Aké,Man Utd,0,1.0
+Macey,Aston Villa,0,1.0
+McAtee,Aston Villa,0,1.0
+Mendes Gomes,Aston Villa,0,1.0
+Morris,Aston Villa,2,1.0
+Muskwe,Aston Villa,0,1.0
+Ogbene,Aston Villa,2,1.0
+Onyedinma,Aston Villa,0,1.0
+Osho,Aston Villa,0,1.0
+Pepple,Aston Villa,0,1.0
+Pereira,Aston Villa,0,1.0
+Potts,Aston Villa,0,1.0
+Rea,Aston Villa,0,1.0
+Shea,Aston Villa,0,1.0
+Taylor,Aston Villa,0,1.0
+Thorpe,Aston Villa,0,1.0
+Walton,Aston Villa,0,1.0
+Watson,Aston Villa,0,1.0
+Woodrow,Aston Villa,0,1.0
+Akanji,Man Utd,0,1.0
+Lukić,Brighton,1,1.0
+Leno,Brighton,3,1.0
+Kongolo,Brighton,0,1.0
+Lukaku Bolingoli,Brentford,0,1.0
+Mount,Man City,1,1.0
+Mudryk,Brentford,0,1.0
+Jackson,Brentford,2,1.0
+Nkunku,Brentford,0,1.0
+Pulisic,Brentford,0,1.0
+Sarr,Brentford,0,1.0
+Słonina,Brentford,0,1.0
+Sterling,Brentford,2,1.0
+Emiliano da Silva,Brentford,1,1.0
+Ziyech,Brentford,0,1.0
+Ahamada,Spurs,1,1.0
+Andersen,Spurs,3,1.0
+Ayew,Spurs,6,1.0
+Clyne,Spurs,1,1.0
+Doucouré,Spurs,2,1.0
+Ebiowei,Spurs,0,1.0
+Edouard,Spurs,2,1.0
+Eze,Spurs,0,1.0
+Guaita,Spurs,0,1.0
+Madueke,Brentford,2,1.0
+James,Brentford,1,1.0
+Knockaert,Brighton,0,1.0
+Hudson-Odoi,Liverpool,0,1.0
+Nascimento dos Santos,Liverpool,1,1.0
+Arrizabalaga,Brentford,0,1.0
+Aubameyang,Brentford,0,1.0
+Azpilicueta,Brentford,0,1.0
+Baba,Brentford,0,1.0
+Badiashile,Brentford,0,1.0
+Bettinelli,Brentford,0,1.0
+Broja,Chelsea,0,1.0
+Chalobah,Brentford,0,1.0
+Chilwell,Brentford,0,1.0
+Chukwuemeka,Brentford,0,1.0
+Colwill,Brentford,1,1.0
+Cucurella Saseta,Brentford,2,1.0
+Fernández,Brentford,0,1.0
+Fofana,Chelsea,0,1.0
+Fofana,Brentford,0,1.0
+Gallagher,Brentford,2,1.0
+Gusto,Brentford,0,1.0
+Hall,Wolves,0,1.0
+Guéhi,Spurs,1,1.0
+Hughes,Spurs,2,1.0
+Johnstone,Spurs,1,1.0
+Lerma Solís,Spurs,2,1.0
+Gueye,West Ham,0,1.0
+Holgate,West Ham,0,1.0
+Iwobi,Brighton,2,1.0
+Keane,West Ham,0,1.0
+Maupay,Chelsea,3,1.0
+McNeil,West Ham,3,1.0
+Mykolenko,West Ham,8,1.0
+Onana,West Ham,3,1.0
+Patterson,West Ham,6,1.0
+Pickford,West Ham,5,1.0
+Simms,West Ham,0,1.0
+Tarkowski,West Ham,6,1.0
+Neves Virgínia,West Ham,0,1.0
+Hoelgebaum Pereira,Brighton,1,1.0
+Cairney,Brighton,1,1.0
+Neves Abreu Cavaleiro,Brighton,0,1.0
+De Cordova-Reid,Brighton,1,1.0
+Diop,Brighton,0,1.0
+Francois,Brighton,0,1.0
+Gray,West Ham,0,1.0
+Godfrey,West Ham,0,1.0
+Gbamin,West Ham,0,1.0
+Schlupp,Spurs,1,1.0
+Mateta,Spurs,1,1.0
+Matthews,Spurs,0,1.0
+Mitchell,Spurs,1,1.0
+O'Brien,Spurs,0,1.0
+Olise,Spurs,0,1.0
+Plange,Spurs,0,1.0
+Richards,Spurs,0,1.0
+Riedewald,Spurs,0,1.0
+Tomkins,Spurs,0,1.0
+Garner,West Ham,3,1.0
+Ward,Spurs,-1,1.0
+Whitworth,Spurs,0,1.0
+Tavares Gomes,West Ham,0,1.0
+Branthwaite,West Ham,8,1.0
+Calvert-Lewin,West Ham,9,1.0
+Coleman,West Ham,0,1.0
+Alli,West Ham,0,1.0
+Doucouré,West Ham,3,1.0
+Tanton,Brighton,0,1.0
